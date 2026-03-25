@@ -1,0 +1,423 @@
+# CHECKLIST POST-IA
+
+Antes de aceptar código generado por IA, verifica:
+
+## ✅ FUNCIONALIDAD
+- [ ] Funciona en desktop (Chrome)
+- [ ] Funciona en móvil (responsive)
+- [ ] No hay errores en consola
+- [ ] Animaciones son fluidas (60fps)
+
+## ✅ EXPERIENCIA INFANTIL
+- [ ] Botones grandes (mínimo 80px táctil)
+- [ ] Colores de alto contraste
+- [ ] Feedback inmediato (<100ms)
+- [ ] Sin textos largos o complejos
+
+## ✅ CÓDIGO LIMPIO
+- [ ] TypeScript sin errores
+- [ ] Comentarios en partes complejas
+- [ ] Nombres de variables descriptivos
+- [ ] Sin console.logs olvidados
+
+## ✅ INTEGRACIÓN
+- [ ] No rompe componentes existentes
+- [ ] Usa el colorService cuando corresponde
+- [ ] Sigue la estructura de carpetas
+- [ ] PROJECT_BRAIN.md está actualizado
+
+## ⚠️ RED FLAGS (rechazar si aparecen)
+- Código sin tipos TypeScript
+- Lógica duplicada que ya existe
+- Dependencias nuevas sin justificación
+- Hardcoded values que deberían estar en constants.ts
+```
+
+---
+
+## 📅 ROADMAP DE 6 MESES (24 SEMANAS)
+
+### 🟢 MES 1-2: FUNDAMENTOS SÓLIDOS (Semanas 1-8)
+
+#### Semana 1-2: Sistema de Gestión del Proyecto
+**Objetivo**: Crear infraestructura invisible pero crítica
+
+**Tareas:**
+1. ✅ Crear PROJECT_BRAIN.md
+2. ✅ Crear PROMPT_TEMPLATES.md  
+3. ✅ Crear QA_CHECKLIST.md
+4. Configurar GitHub con README detallado
+5. Implementar sistema de versiones con Git (branches)
+
+**Prompt para IA:**
+```
+CONTEXTO: Tengo un proyecto React educativo en GitHub sin documentación.
+
+Necesito:
+1. README.md profesional explicando el proyecto
+2. .gitignore optimizado para React + Vite
+3. Sistema de branches (main/development/features)
+4. Guía para usar Git sin romper nada
+
+Mi nivel: Principiante. Explica cada paso como a un niño.
+```
+
+**Resultado esperado**: Proyecto profesional, fácil de retomar después de semanas
+
+---
+
+#### Semana 3-4: Auditoría y Refactor de Código Existente
+**Objetivo**: Asegurar que los 2 juegos actuales son base sólida
+
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Revisa mi código actual (adjunto todos los archivos).
+
+Audita:
+1. ¿Hay código duplicado?
+2. ¿Hay malas prácticas obvias?
+3. ¿La estructura de carpetas es escalable?
+4. ¿Falta tipado TypeScript en algún lugar?
+5. ¿Hay oportunidades de optimización?
+
+Dame:
+- Lista priorizada de refactors (crítico/importante/nice-to-have)
+- Plan de ataque: qué refactorizar primero sin romper nada
+```
+
+**Resultado esperado**: Base de código limpia y escalable
+
+---
+
+#### Semana 5-6: Sistema de Audio y Feedback
+**Objetivo**: Hacer la app más inmersiva para niños
+
+**Features a implementar:**
+- AudioService.ts (servicio centralizado)
+- Sonidos de feedback positivo
+- Música de fondo opcional
+- Voces en off (nombres de colores)
+
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Necesito implementar sistema de audio para app infantil.
+
+REQUISITOS:
+- AudioService.ts que maneje todos los sonidos
+- Usar Web Audio API (no <audio> tags)
+- Precarga de sonidos para evitar delay
+- Control de volumen global
+- Método play() que nunca falle (try/catch)
+
+SONIDOS NECESARIOS:
+- success.mp3 (cuando acierta)
+- tap.mp3 (cuando toca botón)
+- complete.mp3 (cuando completa actividad)
+
+¿Dónde consigo sonidos free? ¿Cómo los integro?
+```
+
+**Recursos que la IA te sugerirá:**
+- Freesound.org
+- Zapsplat.com
+- ElevenLabs (voces AI gratis)
+
+---
+
+#### Semana 7-8: Sistema de Animaciones
+**Objetivo**: Transiciones fluidas y atractivas
+
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Quiero añadir animaciones profesionales sin librerías pesadas.
+
+NECESITO:
+1. Animaciones de entrada/salida de componentes
+2. Feedback visual al tocar botones (scale + bounce)
+3. Partículas/confetti cuando completa juego
+4. Transiciones suaves entre pantallas
+
+RESTRICCIONES:
+- Performance en móviles antiguos
+- Usar Framer Motion o CSS puro (tú decides cuál es mejor)
+- Que sea fácil de mantener para alguien que no sabe CSS avanzado
+
+Dame implementación + guía de uso
+```
+
+---
+
+### 🟡 MES 3-4: EXPANSIÓN DE CONTENIDO (Semanas 9-16)
+
+#### Semana 9-10: Juego 3 - "Encuentra el Color"
+**Concepto pedagógico**: Reconocimiento de colores en contexto
+
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+NUEVO JUEGO: "Encuentra el Color"
+
+MECÁNICA:
+- Voz dice "Encuentra el rojo"
+- Pantalla muestra 6 objetos de diferentes colores
+- Niño toca el objeto del color correcto
+- Feedback positivo + siguiente color
+
+PROGRESIÓN:
+- Nivel 1: 3 objetos, colores primarios
+- Nivel 2: 4 objetos, incluye secundarios
+- Nivel 3: 6 objetos, incluye tonos (rojo claro/oscuro)
+
+IMPLEMENTACIÓN:
+- Componente FindColorGame.tsx
+- Integrar AudioService para voz
+- Usar animaciones existentes
+- Guardar progreso localmente (localStorage)
+
+Dame código completo + assets necesarios
+```
+
+---
+
+#### Semana 11-12: Juego 4 - "Mezcla de Colores"
+**Concepto pedagógico**: Teoría del color básica
+
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+NUEVO JUEGO: "Mezcla Mágica"
+
+MECÁNICA:
+- 2 botes de pintura (ej: amarillo + azul)
+- Niño arrastra uno sobre otro
+- Animación de mezcla
+- Aparece nuevo color (verde)
+- Celebración
+
+FÍSICA:
+- Colores primarios: rojo, amarillo, azul
+- Mezclas: rojo+amarillo=naranja, azul+amarillo=verde, rojo+azul=morado
+
+TÉCNICO:
+- Drag & drop touch-friendly
+- Animación de líquido mezclándose
+- ColorMixingService que calcule resultado
+- Tutorial interactivo la primera vez
+
+¿Cómo implemento drag&drop accesible para niños de 3 años?
+```
+
+---
+
+#### Semana 13-14: Juego 5 - "Memoria de Colores"
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+NUEVO JUEGO: Memoria de colores (tipo Simon Says)
+
+MECÁNICA:
+- Secuencia de colores se ilumina
+- Niño debe repetirla
+- Cada ronda añade un color más
+
+NIVELES:
+- Fácil: 2-3 colores
+- Medio: 4-5 colores  
+- Difícil: 6-8 colores
+
+IMPLEMENTACIÓN:
+- Componente ColorMemoryGame.tsx
+- Lógica de secuencias en MemoryService.ts
+- Animaciones de iluminación
+- Sonido único por color
+
+Dame arquitectura completa
+```
+
+---
+
+#### Semana 15-16: Sistema de Progreso y Recompensas
+**Objetivo**: Motivación extrínseca para niños
+
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Necesito sistema de progreso gamificado para preescolares.
+
+FEATURES:
+1. Perfil de niño (avatar, nombre)
+2. Estrellas por completar juegos
+3. Stickers coleccionables (1 por juego completado)
+4. "Jardín de colores" que crece con progreso
+5. Guardado local (localStorage + export JSON)
+
+DISEÑO PEDAGÓGICO:
+- No competitivo (no comparar con otros)
+- Solo feedback positivo
+- Celebrar esfuerzo, no perfección
+
+¿Cómo implemento esto sin backend?
+```
+
+---
+
+### 🔵 MES 5: PULIDO Y PROFESIONALIZACIÓN (Semanas 17-20)
+
+#### Semana 17: Accesibilidad y Usabilidad
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Audita mi app para accesibilidad infantil.
+
+CHEQUEA:
+- ¿Funciona sin mouse (solo touch)?
+- ¿Contraste de colores adecuado?
+- ¿Screen readers pueden usarla? (para niños con discapacidad visual)
+- ¿Funciona en modo landscape y portrait?
+- ¿Hay affordances claras (el niño sabe qué tocar)?
+
+Dame reporte + plan de corrección
+```
+
+---
+
+#### Semana 18: Optimización de Performance
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Optimiza la app para móviles de gama baja.
+
+OBJETIVOS:
+- Carga inicial < 3 segundos
+- 60fps en animaciones
+- Imágenes optimizadas (WebP)
+- Lazy loading de juegos
+- Service Worker para funcionar offline
+
+Dame plan de optimización paso a paso
+```
+
+---
+
+#### Semana 19: Testing Manual Guiado
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Crea test plan manual para que padres prueben la app con sus hijos.
+
+INCLUYE:
+- Checklist de funcionalidad
+- Qué observar en el niño (frustración, engagement)
+- Formulario de feedback
+- Escenarios de uso (niño solo, con padre, primer uso vs repetido)
+
+Dame documento listo para compartir
+```
+
+---
+
+#### Semana 20: Mejoras basadas en Feedback
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Recibí este feedback de 5 padres: [Pegar feedback]
+
+Prioriza las mejoras por:
+1. Impacto en aprendizaje
+2. Facilidad de implementación
+3. Frecuencia de mención
+
+Dame roadmap de fixes
+```
+
+---
+
+### 🟣 MES 6: LANZAMIENTO (Semanas 21-24)
+
+#### Semana 21: Preparación de Deploy
+**Prompt para IA:**
+```
+[Pegar PROJECT_BRAIN.md]
+
+Necesito deployar en Vercel/Netlify (tú dime cuál es mejor).
+
+REQUISITOS:
+- HTTPS obligatorio
+- Custom domain (chromaysusamigos.com)
+- Optimización automática de assets
+- Analytics básico (Google Analytics)
+- Error tracking (Sentry free tier)
+
+Dame guía paso a paso de deployment
+```
+
+---
+
+#### Semana 22: Landing Page y Marketing
+**Prompt para IA:**
+```
+Crea landing page simple para app educativa infantil.
+
+OBJETIVO: Que padres entiendan el valor y la prueben.
+
+SECCIONES:
+1. Hero: Título + captura de pantalla + CTA "Jugar Ahora"
+2. Qué aprenderán: 3 beneficios clave
+3. Cómo funciona: 3 pasos simples
+4. Screenshots de juegos
+5. Testimonios (placeholder)
+6. FAQ
+7. Footer con redes
+
+TECH: HTML + Tailwind CSS, 1 solo archivo
+TONO: Cercano, claro, sin exagerar
+
+Dame código completo
+```
+
+---
+
+#### Semana 23: Documentación para Padres/Maestros
+**Prompt para IA:**
+```
+Crea guía pedagógica en PDF para padres.
+
+CONTENIDO:
+- Qué habilidades desarrolla cada juego
+- Edad recomendada
+- Cómo jugar junto al niño (tips)
+- Señales de progreso
+- Cuándo pasar al siguiente nivel
+- FAQ de uso técnico
+
+FORMATO: Documento amigable, visual, máximo 2 páginas
+```
+
+---
+
+#### Semana 24: Soft Launch y Monitoreo
+**Prompt para IA:**
+```
+Estrategia de soft launch para app educativa.
+
+PLAN:
+1. ¿Dónde compartir? (grupos de padres, foros, redes)
+2. ¿Qué métricas trackear?
+3. ¿Cómo recolectar feedback?
+4. ¿Cuándo considerar que fue exitoso?
+
+Dame checklist de lanzamiento

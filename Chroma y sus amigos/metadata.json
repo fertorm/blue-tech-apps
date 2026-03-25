@@ -1,0 +1,7 @@
+{
+  "name": "Chroma y sus Amigos",
+  "description": "Una aplicación educativa de mezcla de colores y fracciones para niños de 5-8 años, guiada por Chroma el camaleón.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

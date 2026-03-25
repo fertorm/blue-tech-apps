@@ -1,0 +1,55 @@
+# PLANTILLAS DE PROMPTS EFECTIVOS
+
+## TEMPLATE 1: Añadir Nueva Feature
+```
+CONTEXTO: [Pegar PROJECT_BRAIN.md]
+
+NUEVA FEATURE: [Descripción simple]
+- Qué debe hacer el niño: [Acción]
+- Qué debe aprender: [Concepto]
+- Cómo sabe que lo logró: [Feedback]
+
+REQUISITOS TÉCNICOS:
+- Debe integrarse en la estructura actual
+- Usar el colorService existente
+- Mantener el estilo visual consistente
+- Añadir comentarios explicativos
+
+ENTREGABLE:
+1. Código del componente nuevo
+2. Cambios necesarios en otros archivos
+3. Checklist de QA para probar
+4. Actualización del PROJECT_BRAIN.md
+```
+
+## TEMPLATE 2: Mejorar UX/UI Existente
+```
+CONTEXTO: [Pegar PROJECT_BRAIN.md]
+
+COMPONENTE A MEJORAR: [Nombre]
+PROBLEMA ACTUAL: [Qué no funciona bien]
+OBJETIVO: [Cómo debería comportarse]
+
+RESTRICCIONES:
+- No romper funcionalidad existente
+- Mantener accesibilidad para niños pequeños
+- Performance debe ser fluido en móviles
+
+¿Qué sugieres? Dame 3 opciones con pros/contras
+```
+
+## TEMPLATE 3: Debugging
+```
+CONTEXTO: [Pegar PROJECT_BRAIN.md]
+
+ERROR: [Descripción o mensaje de error]
+ARCHIVO: [Nombre del archivo]
+QUÉ INTENTABA HACER: [Acción del usuario]
+
+[Pegar código relevante]
+
+Necesito:
+1. Diagnóstico del problema
+2. Solución con explicación simple
+3. Cómo prevenir esto en el futuro
+```

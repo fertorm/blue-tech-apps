@@ -1,0 +1,47 @@
+# CHROMA Y SUS AMIGOS - Project Brain
+**Última actualización**: [Fecha]
+**Versión App**: 0.2
+
+## CONTEXTO DEL PROYECTO
+- **Qué es**: App educativa para enseñar colores a niños 5-8 años
+- **Stack**: React + TypeScript + Vite
+- **Estado actual**: 2 juegos básicos funcionando
+- **Objetivo 6 meses**: App completa publicada
+
+## PRINCIPIOS DE DISEÑO (INVIOLABLE)
+1. **Simplicidad infantil**: Botones grandes (min 80px), colores puros
+2. **Feedback inmediato**: Sonidos + animaciones en cada interacción
+3. **Sin texto complejo**: Solo palabras sueltas, depende de visual/audio
+4. **Tolerancia al error**: Nunca mensajes "equivocado", solo guiar
+5. **Progresión invisible**: Dificultad sube sin que el niño lo note
+
+## ESTRUCTURA TÉCNICA ACTUAL
+```
+/components
+  - GameComponent1 (qué hace)
+  - GameComponent2 (qué hace)
+/services
+  - colorService.ts (maneja lógica de colores)
+/types.ts (definiciones TypeScript)
+/constants.ts (colores, configuraciones)
+```
+
+## ESTADO DE FEATURES
+✅ Juego 1: [permite aprender colores mezclando tonos]
+✅ Juego 2: [en desarrollo todavia]
+🔄 En desarrollo: [Nada actualmente]
+📋 Próximo: [Definir basado en roadmap]
+
+## DEUDA TÉCNICA CONOCIDA
+- [ ] Sin sistema de audio
+- [ ] Sin animaciones fluidas
+- [ ] Sin guardado de progreso
+- [ ] Sin tests
+
+## REGLAS PARA LA IA
+Cuando te pida cambios, siempre:
+1. Mantén TypeScript estricto
+2. Usa componentes funcionales + hooks
+3. Separa lógica de negocio en /services
+4. Añade comentarios en español
+5. Sugiere mejoras pedagógicas si ves oportunidad
