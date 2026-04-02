@@ -74,7 +74,16 @@ export default function DashboardScreen({
             <div className="hist-list">
               {sessions.slice(0, 15).map((session) => (
                 <article key={session.id} className="hist-item">
-                  <div className="hist-dot" />
+                  <div
+                    className="hist-dot"
+                    style={
+                      session.goal === "cardio"
+                        ? { background: "#00bcd4" }
+                        : session.goal === "calisthenics"
+                        ? { background: "#9c27b0" }
+                        : undefined
+                    }
+                  />
                   <div className="hist-info">
                     <div className="hist-title">
                       {session.title || "Rutina completada"}

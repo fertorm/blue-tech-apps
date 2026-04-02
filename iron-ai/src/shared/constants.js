@@ -51,6 +51,8 @@ export const GOAL_LABELS = {
   strength: "Fuerza",
   fat_loss: "Definición",
   endurance: "Resistencia",
+  cardio: "Cardio",
+  calisthenics: "Calistenia",
 };
 
 export const DEFAULT_WORKOUT_STATE = {

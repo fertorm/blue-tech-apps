@@ -136,3 +136,27 @@ input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;hei
 .rec-spacer{height:16px;display:block}
 .prof-divider{border:none;border-top:.5px solid #1e1e1e;margin:4px 0}
 @media (max-width:640px){.hdr-row,.hdr-actions,.wstats,.metric-row{flex-direction:column;align-items:stretch}.tiles,.metrics-grid,.dash-stats{grid-template-columns:1fr}.week-grid{gap:8px}}
+.module-tabs{display:flex;gap:0;border-bottom:.5px solid #1e1e1e;background:#0c0c0c}
+.module-tab{flex:1;padding:11px 6px;font-family:"Bebas Neue",Impact,sans-serif;font-size:.82rem;letter-spacing:.12em;background:transparent;color:#555;border:none;border-bottom:2px solid transparent;transition:all .15s}
+.module-tab.on{color:#FF5C00;border-bottom-color:#FF5C00}
+.module-tab:hover:not(.on){color:#aaa}
+.cm-cardio{display:flex;gap:9px;margin-top:4px;flex-wrap:wrap}
+.ms-work{font-size:.64rem;color:#888}
+.ms-work b{color:#FF5C00;font-weight:600}
+.ms-work .sep{color:#444;margin:0 2px}
+.prog-bar{display:flex;gap:5px;margin:10px 0 6px}
+.prog-step{flex:1;height:5px;border-radius:3px;background:#222;transition:background .2s}
+.prog-step.done{background:#FF5C00}
+.prog-step.current{background:#FF8A3D;box-shadow:0 0 6px #FF5C0055}
+.cali-skill-card{background:#131313;border:.5px solid #222;border-radius:11px;overflow:hidden;margin-bottom:10px}
+.cali-skill-hdr{padding:12px 14px 8px;border-bottom:.5px solid #1e1e1e}
+.cali-skill-name{font-family:"Bebas Neue",Impact,sans-serif;font-size:1rem;color:#F0EEE8;letter-spacing:.06em}
+.cali-step-label{font-size:.6rem;color:#FF8A3D;text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
+.cali-skill-body{padding:10px 14px}
+.cali-advance-btn{width:100%;padding:9px;font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:#110700;color:#FF8A3D;border:.5px solid #FF5C0040;border-radius:8px;margin-top:10px;transition:all .15s}
+.cali-advance-btn:hover{background:#1a0f00;border-color:#FF5C00;color:#FF5C00}
+.cali-advance-btn:disabled{opacity:.35;cursor:not-allowed}
+.cali-next-preview{padding:8px 14px;background:#0d0d0d;border-top:.5px solid #1a1a1a;font-size:.65rem;color:#555;font-style:italic}
+.cali-next-preview b{color:#888;font-style:normal}
+.hist-dot-cardio{background:#00bcd4}
+.hist-dot-cali{background:#9c27b0}
