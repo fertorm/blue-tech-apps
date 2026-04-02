@@ -28,6 +28,6 @@ create policy "crud_own" on weight_logs
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
 
--- Índice para queries por usuario ordenadas por fecha
-create index if not exists weight_logs_user_date
-  on weight_logs (user_id, logged_at desc);
+-- Índice único para queries por usuario y soportar upsert onConflict
+create unique index if not exists weight_logs_user_date
+  on weight_logs (user_id, logged_at);
