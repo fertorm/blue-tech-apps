@@ -69,8 +69,8 @@ export default function IronAI() {
   const [loginReturnTo, setLoginReturnTo] = useState("form");
 
   // ── Premium ────────────────────────────────────────────────────────────────
-  const [isPremium, setIsPremium]         = useState(false)
-  const [showUpgrade, setShowUpgrade]     = useState(false)
+  const [isPremium, setIsPremium]         = useState(false);
+  const [showUpgrade, setShowUpgrade]     = useState(false);
 
   // ── Sesiones / Dashboard ───────────────────────────────────────────────────
   const [sessions, setSessions] = useState([]);
@@ -82,12 +82,20 @@ export default function IronAI() {
   const [profileSaved, setProfileSaved] = useState(false);
 
   async function checkPremium(userId) {
-    const { data } = await supabase
-      .from("premium_users")
-      .select("purchased_at")
-      .eq("user_id", userId)
-      .maybeSingle()
-    setIsPremium(!!data)
+    try {
+      const { data, error } = await supabase
+        .from("premium_users")
+        .select("purchased_at")
+        .eq("user_id", userId)
+        .maybeSingle()
+      if (error) {
+        console.error("[checkPremium]", error.message)
+        return
+      }
+      setIsPremium(!!data)
+    } catch (err) {
+      console.error("[checkPremium] unexpected error", err)
+    }
   }
 
   // ── Effects ────────────────────────────────────────────────────────────────
@@ -112,7 +120,7 @@ export default function IronAI() {
 
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
-      if (session?.user) checkPremium(session.user.id)  // ← agregar esta línea
+      if (session?.user) checkPremium(session.user.id)
     });
 
     const {
@@ -120,10 +128,10 @@ export default function IronAI() {
     } = supabase.auth.onAuthStateChange(async (_event, session) => {
       setUser(session?.user ?? null);
       if (session?.user && showAuthPrompt) setShowAuthPrompt(false);
-      if (!session) setIsPremium(false)
+      if (!session) setIsPremium(false);
 
       if (session?.user) {
-        checkPremium(session.user.id)
+        checkPremium(session.user.id);
         // Sincronizar perfil
         const { data: profileData } = await supabase
           .from("user_profiles")
