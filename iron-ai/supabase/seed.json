@@ -1,0 +1,1530 @@
+[
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Chest", "Triceps"],
+    "equip": ["Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "PUSH HYPERTROPHY — PECHO Y TRÍCEPS",
+      "tagline": "Construye masa donde más se nota.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Bench Press",
+          "nameEs": "Press de pecho con mancuernas",
+          "muscle": "Chest",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Recostado en banco plano, baja las mancuernas controladamente hasta que los codos formen 90°. Empuja hacia arriba contrayendo el pecho al final del movimiento. Mantén los pies firmes en el suelo.",
+          "tip": "Aprieta las mancuernas entre sí al subir para mayor activación."
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "nameEs": "Press inclinado con mancuernas",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Con el banco a 30-45°, presiona las mancuernas desde los hombros hacia arriba. Prioriza la porción superior del pecho manteniendo los codos a 45° del torso. Baja lento en 3 segundos.",
+          "tip": "No uses un ángulo mayor a 45°, activa más hombro que pecho."
+        },
+        {
+          "name": "Dumbbell Flyes",
+          "nameEs": "Aperturas con mancuernas",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "En banco plano, baja las mancuernas en arco amplio sintiendo el estiramiento del pecho. Mantén una ligera flexión en los codos durante todo el recorrido. Sube contrayendo fuerte el pecho.",
+          "tip": "El peso debe ser ligero — aquí el estiramiento es el objetivo."
+        },
+        {
+          "name": "Overhead Dumbbell Tricep Extension",
+          "nameEs": "Extensión de tríceps sobre cabeza",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "De pie o sentado, sostén una mancuerna con ambas manos sobre la cabeza. Baja detrás de la nuca doblando solo los codos. Extiende completamente para contraer la cabeza larga del tríceps.",
+          "tip": "Mantén los codos apuntando al frente, no los dejes abrirse."
+        },
+        {
+          "name": "Dumbbell Kickback",
+          "nameEs": "Patada de tríceps con mancuerna",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Apoyado con una mano en el banco, lleva el brazo paralelo al suelo y extiende el codo hasta bloquear. Mantén el torso quieto y el codo fijo — solo se mueve el antebrazo. Contrae el tríceps al final.",
+          "tip": "Usa peso ligero y enfócate en la contracción total al extender."
+        },
+        {
+          "name": "Diamond Push-Up",
+          "nameEs": "Flexión diamante",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "hasta el fallo",
+          "rest": 60,
+          "instructions": "Coloca las manos juntas formando un triángulo debajo del pecho. Baja controladamente manteniendo los codos cerca del torso. Este ejercicio aísla el tríceps de forma efectiva con peso corporal.",
+          "tip": "Si es muy difícil, apoya las rodillas para reducir la carga."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Back", "Biceps"],
+    "equip": ["Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "PULL HYPERTROPHY — ESPALDA Y BÍCEPS",
+      "tagline": "Construye la espalda que siempre quisiste.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Bent Over Row",
+          "nameEs": "Remo inclinado con mancuerna",
+          "muscle": "Back",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Con una mano apoyada en el banco, tira la mancuerna hacia la cadera manteniendo el codo cerca del cuerpo. Lleva el omóplato hacia la columna al final del movimiento. Baja de forma controlada en 2-3 segundos.",
+          "tip": "Jala con el codo, no con la mano — activa más dorsal."
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "nameEs": "Pullover con mancuerna",
+          "muscle": "Back",
+          "sets": 3,
+          "reps": "12-14",
+          "rest": 60,
+          "instructions": "Recostado transversalmente en un banco, sostén una mancuerna con ambas manos sobre el pecho. Baja detrás de la cabeza sintiendo el estiramiento del dorsal. Vuelve a la posición inicial contrayendo el dorsal.",
+          "tip": "Mantén las caderas bajas para mayor rango de movimiento."
+        },
+        {
+          "name": "Dumbbell Rear Delt Fly",
+          "nameEs": "Apertura posterior con mancuernas",
+          "muscle": "Back",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 60,
+          "instructions": "Inclinado a 45° o sentado con torso hacia adelante, eleva las mancuernas hacia los lados con codos ligeramente flexionados. Contrae los deltoides posteriores y romboides al llegar arriba. Baja muy lento.",
+          "tip": "Imagina que tienes un lápiz entre los omóplatos y trata de apretarlo."
+        },
+        {
+          "name": "Dumbbell Curl",
+          "nameEs": "Curl de bíceps alterno",
+          "muscle": "Biceps",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "De pie, sube alternando cada brazo con supinación de la muñeca al subir. Mantén el codo quieto pegado al torso durante todo el recorrido. Baja de forma controlada sin dejar caer el peso.",
+          "tip": "Gira la muñeca hacia afuera al subir para mayor activación del bíceps."
+        },
+        {
+          "name": "Hammer Curl",
+          "nameEs": "Curl martillo",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "12-14",
+          "rest": 60,
+          "instructions": "Con agarre neutro (pulgares arriba), sube las mancuernas sin rotar la muñeca. Este ejercicio trabaja el braquial y braquiorradial además del bíceps. Alterna o sube ambos brazos simultáneamente.",
+          "tip": "El agarre neutro da más grosor al brazo que el curl tradicional."
+        },
+        {
+          "name": "Concentration Curl",
+          "nameEs": "Curl concentrado",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Sentado, apoya el codo en la cara interna del muslo y sube la mancuerna hacia el hombro. Mantén el codo completamente quieto y aprieta el bíceps en la posición alta. Baja muy controladamente.",
+          "tip": "Gira la muñeca hacia afuera en el punto máximo para pico del bíceps."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Quadriceps", "Hamstrings", "Glutes"],
+    "equip": ["Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "LEG DAY — HIPERTROFIA DE PIERNAS",
+      "tagline": "Las piernas grandes se construyen con dolor.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Goblet Squat",
+          "nameEs": "Sentadilla goblet con mancuerna",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 75,
+          "instructions": "Sostén una mancuerna vertical frente al pecho. Desciende hasta que los muslos queden paralelos al suelo manteniendo el torso erguido. Empuja desde los talones al subir y aprieta los glúteos arriba.",
+          "tip": "Los pies a la anchura de hombros y puntas ligeramente hacia afuera."
+        },
+        {
+          "name": "Romanian Deadlift",
+          "nameEs": "Peso muerto rumano con mancuernas",
+          "muscle": "Hamstrings",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "De pie con mancuernas frente a los muslos, bisagra desde la cadera bajando el torso mientras las mancuernas rozan las piernas. Siente el estiramiento en los isquiotibiales antes de volver arriba. Mantén la espalda recta en todo momento.",
+          "tip": "Empuja las caderas hacia atrás — no hacia abajo — para aislar isquios."
+        },
+        {
+          "name": "Dumbbell Lunge",
+          "nameEs": "Estocada con mancuernas",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "12 c/lado",
+          "rest": 60,
+          "instructions": "Da un paso largo al frente y baja hasta que la rodilla trasera casi toque el suelo. La rodilla delantera no debe superar la punta del pie. Empuja con el talón delantero para volver a la posición inicial.",
+          "tip": "Mantén el torso perpendicular al suelo durante todo el movimiento."
+        },
+        {
+          "name": "Dumbbell Sumo Squat",
+          "nameEs": "Sentadilla sumo con mancuerna",
+          "muscle": "Glutes",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 60,
+          "instructions": "Stance ancho con pies apuntando hacia afuera a 45°, sostén una mancuerna colgando entre las piernas. Desciende manteniendo el torso erguido y las rodillas en línea con los pies. Aprieta los glúteos al subir.",
+          "tip": "La apertura amplia recluta más glúteo medio e interno que la sentadilla normal."
+        },
+        {
+          "name": "Hip Thrust",
+          "nameEs": "Hip thrust con mancuerna",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 75,
+          "instructions": "Apoya la parte superior de la espalda en el banco con una mancuerna sobre las caderas. Empuja las caderas hacia arriba hasta que el torso quede paralelo al suelo. Mantén la contracción del glúteo 1 segundo arriba.",
+          "tip": "Chin to chest — mira hacia el pecho para no hiperextender la lumbar."
+        },
+        {
+          "name": "Dumbbell Calf Raise",
+          "nameEs": "Elevación de talones con mancuernas",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "20-25",
+          "rest": 45,
+          "instructions": "De pie con mancuernas a los lados, sube en puntas de pie lo más alto posible. Mantén la contracción 1 segundo y baja lento con el talón por debajo del nivel del suelo si hay escalón. Trabaja la amplitud completa.",
+          "tip": "Varía la dirección de los pies: paralelo, adentro y afuera para distintas porciones."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Shoulders"],
+    "equip": ["Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "SHOULDER BUILDER — HOMBROS 3D",
+      "tagline": "Hombros anchos que cambian tu silueta.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Shoulder Press",
+          "nameEs": "Press de hombros con mancuernas",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Sentado con respaldo, sube las mancuernas desde la altura de los oídos hasta extender los brazos. Mantén los codos ligeramente por delante del plano del cuerpo. Baja controlado en 2-3 segundos.",
+          "tip": "No bloquees los codos arriba — mantén tensión constante en el deltoides."
+        },
+        {
+          "name": "Lateral Raise",
+          "nameEs": "Elevación lateral",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 60,
+          "instructions": "De pie con mancuernas a los lados, eleva los brazos hasta la altura de los hombros con codos ligeramente flexionados. El meñique debe ir ligeramente más alto que el pulgar. Baja muy lento en 3-4 segundos.",
+          "tip": "Inclínate 10° hacia adelante para mayor activación del deltoides medio."
+        },
+        {
+          "name": "Front Raise",
+          "nameEs": "Elevación frontal",
+          "muscle": "Shoulders",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Alterna los brazos subiendo cada mancuerna frente a ti hasta la altura de los hombros. Mantén una ligera flexión en el codo y el torso estable sin balancear. Baja de forma controlada.",
+          "tip": "Usa la mitad del peso que en elevación lateral — el deltoides frontal es más débil."
+        },
+        {
+          "name": "Arnold Press",
+          "nameEs": "Press Arnold",
+          "muscle": "Shoulders",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Comienza con las mancuernas frente a la cara con palmas hacia ti. Rota las palmas hacia afuera mientras subes las mancuernas sobre la cabeza. Invierte el movimiento al bajar para máximo rango de rotación.",
+          "tip": "El press Arnold activa los tres haces del deltoides en un solo movimiento."
+        },
+        {
+          "name": "Upright Row",
+          "nameEs": "Remo al mentón",
+          "muscle": "Shoulders",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Con mancuernas frente al cuerpo, sube los codos por encima de las muñecas hasta la altura del mentón. Mantén las mancuernas cerca del cuerpo durante todo el recorrido. Baja controladamente.",
+          "tip": "Agarre más ancho que hombros reduce el riesgo de impingement."
+        },
+        {
+          "name": "Bent Over Rear Delt Raise",
+          "nameEs": "Apertura posterior inclinado",
+          "muscle": "Shoulders",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 60,
+          "instructions": "Inclinado a 45° con torso paralelo al suelo, eleva las mancuernas hacia los lados hasta la altura de los hombros. Mantén los codos ligeramente flexionados y el movimiento controlado. Enfócate en el deltoides posterior.",
+          "tip": "El deltoides posterior es el más olvidado — no lo neglijas para hombros equilibrados."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "beginner",
+    "muscles": ["Chest", "Back", "Shoulders", "Biceps", "Triceps"],
+    "equip": ["Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "FULL UPPER BODY — CUERPO SUPERIOR",
+      "tagline": "Tu primera semana de crecimiento real.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Bench Press",
+          "nameEs": "Press de pecho con mancuernas",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 75,
+          "instructions": "Recostado en banco plano, baja las mancuernas controladamente hasta que los codos queden a la altura del pecho. Empuja hacia arriba apretando el pecho al final. Mantén los pies firmes en el suelo todo el tiempo.",
+          "tip": "Empieza con un peso con el que puedas hacer las 15 reps con buena técnica."
+        },
+        {
+          "name": "Dumbbell Bent Over Row",
+          "nameEs": "Remo con mancuerna",
+          "muscle": "Back",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 75,
+          "instructions": "Con una mano apoyada en el banco, tira la mancuerna hacia la cadera manteniendo la espalda recta. Lleva el codo hacia atrás como si quisieras tocar la pared de atrás. Baja controlado.",
+          "tip": "Mira el suelo para mantener la columna neutra durante todo el ejercicio."
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "nameEs": "Press de hombros",
+          "muscle": "Shoulders",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Sentado con respaldo, empuja las mancuernas desde la altura de los oídos hacia arriba. Mantén el core apretado para no arquear la espalda baja. Baja lento y controlado.",
+          "tip": "Si sientes dolor en el hombro, reduce el rango de movimiento al bajar."
+        },
+        {
+          "name": "Dumbbell Curl",
+          "nameEs": "Curl de bíceps",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "De pie, sube las mancuernas alternando brazos manteniendo el codo quieto al lado del torso. No balancees el cuerpo para ayudar el movimiento. Baja de forma controlada.",
+          "tip": "La mitad del trabajo del bíceps es la fase excéntrica — baja lento."
+        },
+        {
+          "name": "Overhead Dumbbell Tricep Extension",
+          "nameEs": "Extensión de tríceps sobre cabeza",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Sostén una mancuerna con ambas manos sobre la cabeza. Baja detrás de la nuca doblando solo los codos y vuelve arriba extendiendo completamente. Mantén los codos apuntando hacia el frente.",
+          "tip": "Usa un peso que puedas controlar sin mover los codos hacia afuera."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "advanced",
+    "muscles": ["Chest", "Shoulders", "Triceps"],
+    "equip": ["Barbell", "Dumbbells"],
+    "duration": 60,
+    "workout_data": {
+      "title": "PUSH DAY ELITE — EMPUJE AVANZADO",
+      "tagline": "Volumen e intensidad para el atleta serio.",
+      "totalTime": 60,
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "nameEs": "Press de banca con barra",
+          "muscle": "Chest",
+          "sets": 5,
+          "reps": "6-8",
+          "rest": 120,
+          "instructions": "Agarra la barra a la anchura que forma 90° en los codos al bajar. Toca el pecho con la barra controladamente y empuja explosivamente. Mantén los omóplatos retraídos y los pies apretados contra el suelo.",
+          "tip": "El leg drive transmite fuerza desde los pies hasta la barra — úsalo."
+        },
+        {
+          "name": "Incline Barbell Press",
+          "nameEs": "Press inclinado con barra",
+          "muscle": "Chest",
+          "sets": 4,
+          "reps": "8-10",
+          "rest": 90,
+          "instructions": "Con banco a 30°, baja la barra hacia la parte superior del pecho con control. Empuja en línea recta hacia arriba y ligeramente hacia atrás. El agarre debe ser más estrecho que en press plano.",
+          "tip": "30° de inclinación maximiza la activación del pecho superior vs. el hombro."
+        },
+        {
+          "name": "Dumbbell Incline Flyes",
+          "nameEs": "Aperturas inclinadas",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 75,
+          "instructions": "En banco inclinado, baja las mancuernas en arco amplio hasta sentir el estiramiento del pecho superior. Sube contrayendo fuerte y junta las mancuernas en la cima. Mantén codos flexionados.",
+          "tip": "Superset con press para maximizar la bomba muscular."
+        },
+        {
+          "name": "Overhead Press",
+          "nameEs": "Press militar con barra",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "8-10",
+          "rest": 90,
+          "instructions": "De pie con barra a la altura de la clavícula, presiona hacia arriba pasando la cabeza levemente hacia atrás. Extiende completamente los brazos arriba y baja controlado. Aprieta el core durante todo el movimiento.",
+          "tip": "La barra debe viajar en línea recta — lleva la cabeza hacia atrás al subir."
+        },
+        {
+          "name": "Lateral Raise",
+          "nameEs": "Elevación lateral",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 60,
+          "instructions": "Eleva las mancuernas hacia los lados hasta la altura del hombro con codos ligeramente flexionados. Baja en 3-4 segundos para maximizar el tiempo bajo tensión. No balancees el cuerpo.",
+          "tip": "Haz una pausa de 1 segundo arriba para eliminar el impulso."
+        },
+        {
+          "name": "Close Grip Barbell Press",
+          "nameEs": "Press cerrado para tríceps",
+          "muscle": "Triceps",
+          "sets": 4,
+          "reps": "8-10",
+          "rest": 90,
+          "instructions": "En banco plano con agarre a la anchura de hombros, baja la barra hacia el abdomen bajo manteniendo los codos cerca del torso. Empuja extendiendo los tríceps completamente. El movimiento es más vertical que el press normal.",
+          "tip": "No pongas las manos demasiado juntas — provoca dolor en muñecas."
+        },
+        {
+          "name": "Skull Crusher",
+          "nameEs": "Rompecráneos con mancuernas",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Recostado en banco, baja las mancuernas hacia las sienes doblando solo los codos. Mantén los brazos perpendiculares al suelo y los codos quietos. Extiende explosivamente para contraer el tríceps.",
+          "tip": "Al final, haz 5 reps de press cerrado para un dropset de queme."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "strength",
+    "level": "advanced",
+    "muscles": ["Chest", "Triceps"],
+    "equip": ["Barbell"],
+    "duration": 60,
+    "workout_data": {
+      "title": "STRENGTH BENCH — FUERZA DE EMPUJE",
+      "tagline": "Más peso en la barra, semana tras semana.",
+      "totalTime": 60,
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "nameEs": "Press de banca con barra",
+          "muscle": "Chest",
+          "sets": 5,
+          "reps": "3-5",
+          "rest": 180,
+          "instructions": "Usa una carga al 80-85% de tu 1RM. Baja controlado en 2 segundos, toca el pecho y empuja explosivamente. La técnica perfecta es no negociable a cargas altas — omóplatos retraídos, pies en el suelo.",
+          "tip": "Gripa la barra como si quisieras doblarla hacia afuera para activar los tríceps."
+        },
+        {
+          "name": "Pause Bench Press",
+          "nameEs": "Press de banca con pausa",
+          "muscle": "Chest",
+          "sets": 4,
+          "reps": "4-6",
+          "rest": 150,
+          "instructions": "Igual al press normal pero haz una pausa de 2 segundos con la barra tocando el pecho. Esto elimina el reflejo elástico y desarrolla fuerza en el punto más débil. Usa 60-70% del 1RM.",
+          "tip": "La pausa en el pecho es el mejor ejercicio para romper mesetas en el press."
+        },
+        {
+          "name": "Incline Barbell Press",
+          "nameEs": "Press inclinado con barra",
+          "muscle": "Chest",
+          "sets": 4,
+          "reps": "5-6",
+          "rest": 120,
+          "instructions": "Banco a 30°, ejecuta el movimiento de manera explosiva en la fase concéntrica. Mantén el arco lumbar controlado y los pies firmes. Este ejercicio corrige desbalances entre pecho superior e inferior.",
+          "tip": "Si tu pecho superior es débil, prioriza este por encima del press plano."
+        },
+        {
+          "name": "Close Grip Bench Press",
+          "nameEs": "Press de banca agarre cerrado",
+          "muscle": "Triceps",
+          "sets": 4,
+          "reps": "5-8",
+          "rest": 120,
+          "instructions": "Agarre a la anchura de hombros en banco plano. Los tríceps fuertes son fundamentales para lockout en el press de banca. Fase concéntrica explosiva, excéntrica de 2-3 segundos.",
+          "tip": "Este ejercicio mejora directamente el último tercio de tu press de banca."
+        },
+        {
+          "name": "Dip",
+          "nameEs": "Fondos en paralelas",
+          "muscle": "Triceps",
+          "sets": 4,
+          "reps": "6-8",
+          "rest": 120,
+          "instructions": "Baja hasta que los hombros estén por debajo de los codos manteniendo el torso ligeramente inclinado hacia adelante. Sube extendiendo completamente los codos. Añade peso con cinturón si el peso corporal es fácil.",
+          "tip": "Torso vertical = más tríceps. Torso inclinado = más pecho."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "strength",
+    "level": "advanced",
+    "muscles": ["Back", "Biceps"],
+    "equip": ["Barbell"],
+    "duration": 60,
+    "workout_data": {
+      "title": "STRENGTH PULL — FUERZA DE TRACCIÓN",
+      "tagline": "Una espalda fuerte protege y potencia todo.",
+      "totalTime": 60,
+      "exercises": [
+        {
+          "name": "Barbell Deadlift",
+          "nameEs": "Peso muerto con barra",
+          "muscle": "Back",
+          "sets": 5,
+          "reps": "3-5",
+          "rest": 240,
+          "instructions": "Con la barra sobre los pies, agarra a la anchura de hombros. Empuja el suelo hacia abajo mientras llevas las caderas adelante simultáneamente. Mantén la columna neutra durante todo el recorrido — nunca redondees la espalda baja.",
+          "tip": "Inhala antes de bajar y mantén la presión intraabdominal durante todo el rep."
+        },
+        {
+          "name": "Barbell Bent Over Row",
+          "nameEs": "Remo con barra inclinado",
+          "muscle": "Back",
+          "sets": 5,
+          "reps": "4-6",
+          "rest": 150,
+          "instructions": "Con torso inclinado a 45°, tira la barra hacia el abdomen bajo manteniendo la espalda recta. Los codos deben ir hacia atrás y afuera para maximizar la activación del dorsal. La barra no debe oscilar.",
+          "tip": "Agarre prono activa más dorsal; agarre supino activa más bíceps."
+        },
+        {
+          "name": "Weighted Pull Up",
+          "nameEs": "Dominadas lastradas",
+          "muscle": "Back",
+          "sets": 4,
+          "reps": "4-6",
+          "rest": 150,
+          "instructions": "Con peso adicional en cinturón, sube hasta que la barbilla supere la barra. Baja en 3 segundos completos para maximizar el trabajo excéntrico. Mantén la tensión en el dorsal durante toda la bajada.",
+          "tip": "Si no puedes hacer 6 reps sin peso extra, domina primero las dominadas libres."
+        },
+        {
+          "name": "Rack Pull",
+          "nameEs": "Peso muerto desde rack",
+          "muscle": "Back",
+          "sets": 4,
+          "reps": "4-6",
+          "rest": 180,
+          "instructions": "Desde los pines del rack a la altura de rodillas, tira la barra hasta la posición de bloqueo. Permite usar más peso que el peso muerto convencional para fortalecer el lockout. Aprieta los glúteos al llegar arriba.",
+          "tip": "El rack pull construye la espalda alta y el trap de forma superior al peso muerto completo."
+        },
+        {
+          "name": "Barbell Curl",
+          "nameEs": "Curl de bíceps con barra",
+          "muscle": "Biceps",
+          "sets": 4,
+          "reps": "5-8",
+          "rest": 120,
+          "instructions": "De pie con la barra colgando, sube con los codos fijos al torso hasta contraer completamente el bíceps. Usa carga al 75-80% del máximo. Baja completamente extendiendo el codo para trabajar el rango completo.",
+          "tip": "Agarre supino a la anchura de hombros es el más fuerte para curl con barra."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "strength",
+    "level": "advanced",
+    "muscles": ["Quadriceps", "Hamstrings", "Glutes"],
+    "equip": ["Barbell"],
+    "duration": 60,
+    "workout_data": {
+      "title": "STRENGTH SQUAT — FUERZA DE PIERNAS",
+      "tagline": "El squat y el peso muerto son el rey y la reina.",
+      "totalTime": 60,
+      "exercises": [
+        {
+          "name": "Back Squat",
+          "nameEs": "Sentadilla con barra",
+          "muscle": "Quadriceps",
+          "sets": 5,
+          "reps": "3-5",
+          "rest": 240,
+          "instructions": "Barra sobre los trapecios, pies a la anchura de hombros con puntas ligeramente afuera. Desciende hasta que los muslos queden paralelos al suelo manteniendo la columna neutra. Empuja desde los talones con máxima intensidad.",
+          "tip": "Usa cinturón de levantamiento en series por encima del 80% de tu 1RM."
+        },
+        {
+          "name": "Romanian Deadlift",
+          "nameEs": "Peso muerto rumano",
+          "muscle": "Hamstrings",
+          "sets": 4,
+          "reps": "5-6",
+          "rest": 150,
+          "instructions": "Desde la posición de pie con barra, bisagra desde la cadera manteniendo la columna neutra y bajando la barra por las piernas. Siente el máximo estiramiento en los isquiotibiales antes de volver. Carga al 70-75% del 1RM de peso muerto.",
+          "tip": "Es el mejor accesorio para desarrollar isquiotibiales para el peso muerto convencional."
+        },
+        {
+          "name": "Front Squat",
+          "nameEs": "Sentadilla frontal",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "4-6",
+          "rest": 150,
+          "instructions": "Barra sobre los deltoides anteriores con codos altos. Este squat requiere más movilidad de tobillo y cadera pero activa más cuádriceps que la sentadilla trasera. Baja a full depth manteniendo codos arriba.",
+          "tip": "El front squat mejora la posición y profundidad de la sentadilla trasera."
+        },
+        {
+          "name": "Hip Thrust with Barbell",
+          "nameEs": "Hip thrust con barra",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "6-8",
+          "rest": 120,
+          "instructions": "Espalda apoyada en banco, barra sobre las caderas con almohadilla protectora. Empuja las caderas hasta que el torso quede paralelo al suelo apretando fuerte los glúteos. Mantén 1-2 segundos en la posición alta.",
+          "tip": "Es el ejercicio que más activa el glúteo mayor — incluirlo es no negociable para fuerza."
+        },
+        {
+          "name": "Leg Press",
+          "nameEs": "Prensa de piernas",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "8-10",
+          "rest": 120,
+          "instructions": "Con los pies a la anchura de hombros en la plataforma, baja el peso hasta 90° de flexión de rodilla. Empuja desde los talones extendiendo completamente pero sin bloquear las rodillas. Ajusta la posición de los pies para cambiar el foco muscular.",
+          "tip": "Pies altos en la plataforma activan más isquios y glúteos; pies bajos más cuádriceps."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "strength",
+    "level": "intermediate",
+    "muscles": ["Chest", "Back", "Shoulders"],
+    "equip": ["Barbell", "Dumbbells"],
+    "duration": 60,
+    "workout_data": {
+      "title": "FULL STRENGTH UPPER — FUERZA CUERPO SUPERIOR",
+      "tagline": "Construye una base sólida de fuerza funcional.",
+      "totalTime": 60,
+      "exercises": [
+        {
+          "name": "Barbell Bench Press",
+          "nameEs": "Press de banca",
+          "muscle": "Chest",
+          "sets": 4,
+          "reps": "5-7",
+          "rest": 150,
+          "instructions": "Usa el 75-80% de tu 1RM estimado. Baja la barra al pecho controladamente y empuja explosivamente. Mantén la técnica correcta: omóplatos retraídos, agarre firme, pies en el suelo.",
+          "tip": "Si no tienes compañero, usa pines de seguridad en el rack."
+        },
+        {
+          "name": "Barbell Bent Over Row",
+          "nameEs": "Remo con barra",
+          "muscle": "Back",
+          "sets": 4,
+          "reps": "6-8",
+          "rest": 120,
+          "instructions": "Torso inclinado a 45°, tira la barra hacia el abdomen con los codos yendo hacia atrás. Mantén la espalda recta y las rodillas ligeramente flexionadas. La barra debe tocar el abdomen en cada repetición.",
+          "tip": "Pesa lo mismo que tu press de banca para equilibrar empuje y tracción."
+        },
+        {
+          "name": "Overhead Press",
+          "nameEs": "Press militar",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "5-7",
+          "rest": 150,
+          "instructions": "De pie con barra a la clavícula, presiona hacia arriba pasando la cabeza hacia atrás. Activa el core fuerte para proteger la espalda baja. Baja la barra a la clavícula completamente en cada rep.",
+          "tip": "El press militar de pie es uno de los mejores indicadores de fuerza total."
+        },
+        {
+          "name": "Pull Up",
+          "nameEs": "Dominadas",
+          "muscle": "Back",
+          "sets": 4,
+          "reps": "6-8",
+          "rest": 120,
+          "instructions": "Agarre prono a la anchura de hombros o más ancho. Sube hasta que la barbilla supere la barra y baja completamente extendiendo los codos. Si necesitas asistencia usa banda elástica.",
+          "tip": "Las dominadas son el squat de la espalda superior — no las reemplaces."
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "nameEs": "Elevación lateral",
+          "muscle": "Shoulders",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Eleva las mancuernas hacia los lados con codos ligeramente flexionados hasta la altura del hombro. Baja lentamente en 3-4 segundos. Este ejercicio complementa el press para hombros completos.",
+          "tip": "Los deltoides medios dan anchura de hombros — no los neglijas."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "strength",
+    "level": "beginner",
+    "muscles": ["Chest", "Back", "Quadriceps", "Hamstrings", "Shoulders"],
+    "equip": ["Barbell", "Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "STRENGTH FOUNDATIONS — FUERZA BÁSICA",
+      "tagline": "Los movimientos básicos primero, siempre.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Barbell Squat",
+          "nameEs": "Sentadilla con barra (peso ligero)",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "8-10",
+          "rest": 120,
+          "instructions": "Comienza con una barra ligera o vacía para aprender la técnica. Pies a la anchura de hombros, baja hasta paralelo o más si la movilidad lo permite. Empuja desde los talones y mantén el torso lo más erguido posible.",
+          "tip": "Domina la técnica antes de agregar peso — forma perfecta primero."
+        },
+        {
+          "name": "Dumbbell Row",
+          "nameEs": "Remo con mancuerna",
+          "muscle": "Back",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 90,
+          "instructions": "Apoya una mano y rodilla en el banco, tira la mancuerna hacia la cadera. Mantén la espalda recta y paralela al suelo. Este ejercicio enseña el patrón de jalón que usarás en ejercicios más avanzados.",
+          "tip": "Aprende este movimiento bien — es la base del peso muerto y las dominadas."
+        },
+        {
+          "name": "Dumbbell Bench Press",
+          "nameEs": "Press de pecho",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 90,
+          "instructions": "En banco plano, baja las mancuernas hasta que los codos queden a la altura del pecho y empuja hacia arriba. Las mancuernas son más seguras que la barra para principiantes porque cada brazo trabaja de forma independiente.",
+          "tip": "Las mancuernas revelan y corrigen desbalances de fuerza entre ambos lados."
+        },
+        {
+          "name": "Romanian Deadlift",
+          "nameEs": "Peso muerto rumano",
+          "muscle": "Hamstrings",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 90,
+          "instructions": "Con mancuernas o barra ligera, bisagra desde la cadera bajando el peso por las piernas hasta sentir estiramiento en los isquios. La espalda debe mantenerse recta en todo momento. Vuelve arriba empujando las caderas hacia adelante.",
+          "tip": "Si sientes más en la espalda baja que en los isquios, reduce el peso y revisa la técnica."
+        },
+        {
+          "name": "Dumbbell Shoulder Press",
+          "nameEs": "Press de hombros",
+          "muscle": "Shoulders",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 90,
+          "instructions": "Sentado con respaldo, empuja las mancuernas desde los oídos hacia arriba. Mantén el core activo para no arquear la espalda. Un buen press de hombros requiere estabilidad escapular — enfócate en eso.",
+          "tip": "Empieza sentado para reducir la demanda de estabilidad del core."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "fat_loss",
+    "level": "beginner",
+    "muscles": ["Chest", "Back", "Quadriceps", "Glutes", "Abs"],
+    "equip": ["Bodyweight"],
+    "duration": 30,
+    "workout_data": {
+      "title": "FAT BURN STARTER — QUEMA GRASA TOTAL",
+      "tagline": "Muévete más, quema más, siente más.",
+      "totalTime": 30,
+      "exercises": [
+        {
+          "name": "Jumping Jacks",
+          "nameEs": "Saltos de tijera",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "30 seg",
+          "rest": 30,
+          "instructions": "Salta abriendo piernas y brazos simultáneamente y vuelve a la posición inicial. Mantén un ritmo constante y los brazos extendidos. Este ejercicio eleva la frecuencia cardíaca rápidamente como calentamiento.",
+          "tip": "Aterriza suave con las rodillas ligeramente flexionadas para proteger las articulaciones."
+        },
+        {
+          "name": "Bodyweight Squat",
+          "nameEs": "Sentadilla libre",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "20",
+          "rest": 30,
+          "instructions": "Pies a la anchura de hombros, brazos extendidos al frente como contrapeso. Baja hasta paralelo o más y vuelve arriba apretando los glúteos. Mantén el peso en los talones y el torso erguido.",
+          "tip": "A mayor velocidad y profundidad, mayor el gasto calórico del ejercicio."
+        },
+        {
+          "name": "Push Up",
+          "nameEs": "Flexión de brazos",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "10-15",
+          "rest": 30,
+          "instructions": "Cuerpo en línea recta desde cabeza hasta pies, manos a la anchura de hombros. Baja el pecho hasta casi tocar el suelo y empuja volviendo arriba. Si es muy difícil, apoya las rodillas en el suelo.",
+          "tip": "Una flexión perfecta con rodillas es mejor que una flexión mala completa."
+        },
+        {
+          "name": "Glute Bridge",
+          "nameEs": "Puente de glúteos",
+          "muscle": "Glutes",
+          "sets": 3,
+          "reps": "20",
+          "rest": 30,
+          "instructions": "Recostado boca arriba con rodillas dobladas, empuja las caderas hacia arriba apretando fuerte los glúteos. Mantén 2 segundos arriba antes de bajar. La columna lumbar debe despegarse del suelo.",
+          "tip": "Presiona los talones contra el suelo — no las puntas — para activar más glúteo."
+        },
+        {
+          "name": "Mountain Climbers",
+          "nameEs": "Escaladores de montaña",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "20 c/lado",
+          "rest": 30,
+          "instructions": "En posición de plancha, lleva alternando las rodillas hacia el pecho lo más rápido posible sin perder la forma. Mantén las caderas a la altura del cuerpo — ni muy altas ni muy bajas. Este ejercicio combina fuerza y cardio.",
+          "tip": "Más rápido = más cardio. Más lento con pausa = más core. Elige según tu objetivo."
+        },
+        {
+          "name": "Plank",
+          "nameEs": "Plancha",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "30-45 seg",
+          "rest": 30,
+          "instructions": "Apoya antebrazos y puntas de pie manteniendo el cuerpo en línea recta. Aprieta el abdomen, glúteos y muslos simultáneamente. No dejes caer las caderas ni las eleves.",
+          "tip": "Respira normalmente — no aguantes la respiración durante la plancha."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "fat_loss",
+    "level": "intermediate",
+    "muscles": ["Chest", "Back", "Quadriceps", "Hamstrings", "Shoulders", "Abs"],
+    "equip": ["Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "METCON DUMBBELLS — QUEMA GRASA CON PESO",
+      "tagline": "Calorías quemadas en el gym y 24 hrs después.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Thruster",
+          "nameEs": "Thruster con mancuernas",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Combina una sentadilla frontal con un press de hombros en un movimiento fluido. Baja hasta paralelo y al subir usa el impulso de las piernas para empujar las mancuernas sobre la cabeza. Es uno de los ejercicios de mayor consumo calórico.",
+          "tip": "El thruster es más eficiente calóricamente que sentadilla y press por separado."
+        },
+        {
+          "name": "Renegade Row",
+          "nameEs": "Remo renegado",
+          "muscle": "Back",
+          "sets": 4,
+          "reps": "8 c/lado",
+          "rest": 60,
+          "instructions": "En posición de plancha con mancuernas, alterna remando cada mancuerna hacia la cadera mientras el otro brazo sostiene el cuerpo. Mantén las caderas a nivel — no las rotes. Combina fuerza de core, espalda y estabilidad.",
+          "tip": "Pies más separados = más estabilidad. Pies juntos = más desafío para el core."
+        },
+        {
+          "name": "Dumbbell Swing",
+          "nameEs": "Swing con mancuerna",
+          "muscle": "Hamstrings",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 60,
+          "instructions": "Sostén una mancuerna con ambas manos, bisagra desde la cadera y balancea el peso hasta la altura de los hombros con un empuje explosivo de caderas. El movimiento viene de las caderas, no de los brazos. Es muy efectivo para quema de grasa.",
+          "tip": "Aprieta los glúteos con fuerza al llegar arriba para proteger la espalda baja."
+        },
+        {
+          "name": "Push Up to Row",
+          "nameEs": "Flexión con remo",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "8-10",
+          "rest": 60,
+          "instructions": "En plancha con mancuernas, haz una flexión y al subir rema alternando cada brazo. Este ejercicio trabaja pecho, espalda, core y hombros en un solo movimiento compuesto.",
+          "tip": "Mantén el cuerpo perfectamente estable — las caderas no deben rotar al remar."
+        },
+        {
+          "name": "Dumbbell Burpee",
+          "nameEs": "Burpee con mancuernas",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "10",
+          "rest": 75,
+          "instructions": "Sostén las mancuernas, colócalas en el suelo, salta los pies hacia atrás a plancha, haz una flexión, salta los pies hacia adelante y levántate. Añade un curl de bíceps y press de hombros al final. Ejercicio total body de alta intensidad.",
+          "tip": "Si necesitas reducir intensidad, camina los pies en vez de saltar."
+        },
+        {
+          "name": "Russian Twist",
+          "nameEs": "Rotación rusa con mancuerna",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "20 total",
+          "rest": 45,
+          "instructions": "Sentado con torso inclinado hacia atrás y pies levantados, rota el torso llevando una mancuerna de lado a lado. Mantén la espalda recta (no redonda) durante toda la rotación. Exhala al rotar.",
+          "tip": "Elevar los pies aumenta significativamente la activación del core."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "fat_loss",
+    "level": "advanced",
+    "muscles": ["Chest", "Back", "Quadriceps", "Hamstrings", "Glutes", "Shoulders", "Abs"],
+    "equip": ["Dumbbells", "Bodyweight"],
+    "duration": 45,
+    "workout_data": {
+      "title": "HIIT ADVANCED — QUEMA MÁXIMA",
+      "tagline": "Alta intensidad, resultados que no se discuten.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Clean and Press",
+          "nameEs": "Clean and press con mancuernas",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "8-10",
+          "rest": 75,
+          "instructions": "Desde el suelo, jala las mancuernas hasta los hombros en un movimiento explosivo (clean) y luego presiona sobre la cabeza. Es un movimiento de potencia total que activa prácticamente todos los músculos. Mantén la espalda neutra durante el clean.",
+          "tip": "La potencia viene de las caderas — no uses los brazos para el clean."
+        },
+        {
+          "name": "Jump Squat",
+          "nameEs": "Sentadilla con salto",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "15",
+          "rest": 60,
+          "instructions": "Desciende a posición de sentadilla y explota hacia arriba en un salto máximo. Aterriza suavemente con rodillas flexionadas y baja inmediatamente a la siguiente repetición. Mantienes el ritmo sin pausas largas.",
+          "tip": "Aterriza con las rodillas dobladas para absorber el impacto y proteger las articulaciones."
+        },
+        {
+          "name": "Burpee Pull Up",
+          "nameEs": "Burpee con dominada",
+          "muscle": "Back",
+          "sets": 3,
+          "reps": "8",
+          "rest": 90,
+          "instructions": "Haz un burpee completo frente a la barra de dominadas y al saltar agarra la barra y sube hasta que la barbilla supere la barra. Es uno de los ejercicios más demandantes metabólicamente. No hay atajos aquí.",
+          "tip": "Si no tienes barra, sustituye con un remo explosivo con mancuernas."
+        },
+        {
+          "name": "Devil Press",
+          "nameEs": "Devil Press",
+          "muscle": "Chest",
+          "sets": 4,
+          "reps": "10",
+          "rest": 75,
+          "instructions": "Sostén mancuernas, baja a burpee, haz una flexión en el suelo, levántate y lleva las mancuernas sobre la cabeza de forma explosiva. Es esencialmente un burpee con mancuernas terminado en snatch. Uno de los ejercicios más efectivos para quema de grasa.",
+          "tip": "El ritmo consistente supera al sprint — no empieces demasiado rápido."
+        },
+        {
+          "name": "Single Leg Romanian Deadlift",
+          "nameEs": "Peso muerto rumano unilateral",
+          "muscle": "Hamstrings",
+          "sets": 3,
+          "reps": "10 c/lado",
+          "rest": 60,
+          "instructions": "De pie con una mancuerna, bisagra hacia adelante extendiendo la pierna trasera. Baja hasta sentir estiramiento en el isquio de la pierna de apoyo. Vuelve arriba apretando el glúteo. Desarrolla equilibrio y fuerza unilateral.",
+          "tip": "Mira un punto fijo en el suelo para mantener el equilibrio."
+        },
+        {
+          "name": "Hollow Body Hold",
+          "nameEs": "Posición hollow",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "30-45 seg",
+          "rest": 45,
+          "instructions": "Recostado, levanta hombros y piernas del suelo manteniendo la espalda baja pegada al suelo. Los brazos extendidos sobre la cabeza. Mantén el core apretado creando una curvatura cóncava con el abdomen.",
+          "tip": "Es la posición de core más funcional que existe — usada por gimnastas de élite."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "fat_loss",
+    "level": "beginner",
+    "muscles": ["Quadriceps", "Glutes", "Abs"],
+    "equip": ["Bodyweight"],
+    "duration": 30,
+    "workout_data": {
+      "title": "LOWER BODY BURN — PIERNAS Y CORE",
+      "tagline": "El tren inferior quema más calorías. Úsalo.",
+      "totalTime": 30,
+      "exercises": [
+        {
+          "name": "Squat",
+          "nameEs": "Sentadilla libre",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "20",
+          "rest": 45,
+          "instructions": "Pies a la anchura de hombros, baja hasta paralelo manteniendo el torso erguido. Sube apretando los glúteos al final del movimiento. Realiza las repeticiones con ritmo constante para mayor quema calórica.",
+          "tip": "Aumenta la velocidad en la fase concéntrica para mayor activación muscular."
+        },
+        {
+          "name": "Reverse Lunge",
+          "nameEs": "Estocada hacia atrás",
+          "muscle": "Glutes",
+          "sets": 3,
+          "reps": "12 c/lado",
+          "rest": 45,
+          "instructions": "Da un paso hacia atrás y baja la rodilla trasera hacia el suelo. La rodilla delantera no debe ir más allá de la punta del pie. Vuelve a la posición inicial empujando con el pie delantero.",
+          "tip": "La estocada trasera es más amigable para las rodillas que la delantera."
+        },
+        {
+          "name": "Glute Bridge",
+          "nameEs": "Puente de glúteos",
+          "muscle": "Glutes",
+          "sets": 3,
+          "reps": "20",
+          "rest": 30,
+          "instructions": "Recostado con rodillas dobladas, empuja las caderas hacia arriba apretando los glúteos fuerte. Mantén 2 segundos arriba. Baja controladamente sin dejar caer las caderas de golpe.",
+          "tip": "Para mayor activación, coloca una banda elástica sobre las rodillas."
+        },
+        {
+          "name": "Step Up",
+          "nameEs": "Subida al cajón / escalón",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "12 c/lado",
+          "rest": 45,
+          "instructions": "Sube con un pie a un cajón o escalera, empuja desde el talón para llevar el cuerpo hacia arriba. Baja controladamente y alterna piernas. La altura del escalón determina la intensidad.",
+          "tip": "Cuanto más alto el cajón, más glúteo y menos cuádriceps."
+        },
+        {
+          "name": "Plank Hip Dip",
+          "nameEs": "Plancha con rotación de cadera",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "20 total",
+          "rest": 30,
+          "instructions": "En plancha de antebrazos, rota las caderas alternando llevando la cadera izquierda y derecha hacia el suelo. Mantén el core apretado y los movimientos controlados. Trabaja los oblicuos y la estabilidad lumbar.",
+          "tip": "El movimiento debe ser controlado — no una rotación brusca."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "endurance",
+    "level": "beginner",
+    "muscles": ["Chest", "Back", "Quadriceps", "Glutes", "Abs"],
+    "equip": ["Bodyweight"],
+    "duration": 30,
+    "workout_data": {
+      "title": "ENDURANCE FOUNDATION — RESISTENCIA BASE",
+      "tagline": "El último rep es el que te hace crecer.",
+      "totalTime": 30,
+      "exercises": [
+        {
+          "name": "Push Up",
+          "nameEs": "Flexión de brazos",
+          "muscle": "Chest",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Mantén el cuerpo en línea recta y baja lentamente hasta casi tocar el suelo. Sube de forma controlada. Para resistencia muscular, el objetivo es hacer más repeticiones con menos descanso.",
+          "tip": "Para resistencia, descansos cortos (30-45 seg) son más efectivos que los largos."
+        },
+        {
+          "name": "Squat",
+          "nameEs": "Sentadilla libre",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "20-25",
+          "rest": 45,
+          "instructions": "Realiza las sentadillas a ritmo constante sin pausas largas entre reps. Baja hasta paralelo manteniendo la técnica correcta incluso cuando el músculo se canse. La respiración debe ser rítmica: exhala al subir.",
+          "tip": "La resistencia muscular se construye entrenando en el rango de 15-25 reps."
+        },
+        {
+          "name": "Inverted Row",
+          "nameEs": "Remo invertido (con mesa o barra baja)",
+          "muscle": "Back",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Bajo una mesa o barra baja, agarra el borde y tira del pecho hacia arriba manteniendo el cuerpo recto. Es el equivalente de una dominada para principiantes. Cuanto más horizontal el cuerpo, más difícil.",
+          "tip": "Ajusta el ángulo del cuerpo para controlar la dificultad del ejercicio."
+        },
+        {
+          "name": "Glute Bridge March",
+          "nameEs": "Puente de glúteos con marcha",
+          "muscle": "Glutes",
+          "sets": 3,
+          "reps": "20 total",
+          "rest": 45,
+          "instructions": "En posición de puente de glúteos, alterna levantando cada rodilla hacia el pecho sin dejar caer las caderas. Mantén los glúteos activos todo el tiempo. Es más desafiante que el puente estático.",
+          "tip": "Si las caderas bajan al levantar la rodilla, fortalece primero el puente estático."
+        },
+        {
+          "name": "Plank",
+          "nameEs": "Plancha",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "45-60 seg",
+          "rest": 45,
+          "instructions": "Mantén la posición de plancha con el cuerpo en línea recta durante el tiempo indicado. Respira de forma controlada y aprieta el core constantemente. Progresa aumentando el tiempo en 5-10 segundos por semana.",
+          "tip": "1 minuto de plancha perfecta supera a 3 minutos de plancha con mala forma."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "endurance",
+    "level": "intermediate",
+    "muscles": ["Back", "Chest", "Shoulders", "Abs"],
+    "equip": ["Cables", "Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "CIRCUIT ENDURANCE — RESISTENCIA MUSCULAR",
+      "tagline": "La resistencia se entrena con poco descanso y mucho volumen.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Cable Row",
+          "nameEs": "Remo en polea baja",
+          "muscle": "Back",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Sentado en la polea baja, tira el agarre hacia el abdomen manteniendo el torso erguido. Aprieta los omóplatos al final y vuelve lento con el torso levemente hacia adelante. Usa un peso que permita las 20 reps con buena forma.",
+          "tip": "Para resistencia, usa 40-50% del máximo y enfócate en la contracción total."
+        },
+        {
+          "name": "Cable Chest Press",
+          "nameEs": "Press de pecho en poleas",
+          "muscle": "Chest",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "De pie frente a las poleas altas, empuja hacia adelante y al centro manteniendo los codos ligeramente flexionados. El cable mantiene tensión constante durante todo el rango de movimiento a diferencia de las mancuernas.",
+          "tip": "Las poleas mantienen tensión en el pecho incluso en el punto de extensión máxima."
+        },
+        {
+          "name": "Cable Lateral Raise",
+          "nameEs": "Elevación lateral en polea",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "15-20 c/lado",
+          "rest": 45,
+          "instructions": "De pie junto a la polea baja, eleva el cable hacia el lado hasta la altura del hombro. La polea baja crea tensión desde el principio del movimiento, a diferencia de las mancuernas. Baja lentamente.",
+          "tip": "La polea es superior a la mancuerna para elevaciones laterales por la tensión constante."
+        },
+        {
+          "name": "Cable Face Pull",
+          "nameEs": "Face pull en polea",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Polea a la altura de la cara con agarre de cuerda, jala hacia la cara dividiendo las manos a los lados de la cabeza. Activa los deltoides posteriores y rotadores externos. Es fundamental para la salud del hombro.",
+          "tip": "El face pull previene lesiones de hombro — hazlo en cada sesión de empuje."
+        },
+        {
+          "name": "Ab Wheel Rollout",
+          "nameEs": "Rueda de abdominales",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "10-15",
+          "rest": 45,
+          "instructions": "Arrodillado con la rueda frente a ti, rueda hacia adelante extendiendo el cuerpo cerca del suelo y vuelve contrayendo el core fuerte. No dejes que la espalda baja se hunda durante la extensión.",
+          "tip": "Empieza con un rango parcial y aumenta gradualmente hasta el extendido completo."
+        },
+        {
+          "name": "Dumbbell Farmers Walk",
+          "nameEs": "Caminata del granjero",
+          "muscle": "Back",
+          "sets": 3,
+          "reps": "30 metros",
+          "rest": 60,
+          "instructions": "Sostén mancuernas pesadas a los lados del cuerpo y camina manteniendo el torso erguido y los hombros hacia atrás. Desarrolla resistencia de agarre, core y trapecios. Es uno de los ejercicios más funcionales que existen.",
+          "tip": "Si los mancuernas raspan el suelo, usa más peso — debería ser desafiante."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "endurance",
+    "level": "advanced",
+    "muscles": ["Chest", "Back", "Quadriceps", "Hamstrings", "Glutes", "Abs", "Shoulders"],
+    "equip": ["Bodyweight", "Dumbbells"],
+    "duration": 45,
+    "workout_data": {
+      "title": "AMRAP ENDURANCE — RESISTENCIA DE ÉLITE",
+      "tagline": "Cuando los demás paran, tú sigues.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Pull Up",
+          "nameEs": "Dominadas",
+          "muscle": "Back",
+          "sets": 5,
+          "reps": "10-15",
+          "rest": 45,
+          "instructions": "Dominadas con agarre prono hasta que la barbilla supere la barra. Para resistencia muscular, reduce el descanso entre series a 45 segundos. Mantén la técnica aunque el último rep sea difícil.",
+          "tip": "Para resistencia, prioriza más series con menos descanso sobre más reps con más descanso."
+        },
+        {
+          "name": "Push Up",
+          "nameEs": "Flexión de brazos",
+          "muscle": "Chest",
+          "sets": 5,
+          "reps": "20-25",
+          "rest": 45,
+          "instructions": "Flexiones a ritmo constante con técnica perfecta. Para resistencia avanzada, haz las últimas reps de cada serie más lentas para aumentar el tiempo bajo tensión. El objetivo es no bajar las rodillas en ninguna serie.",
+          "tip": "Un tempo de 2-0-2 (2 seg bajada, 0 pausa, 2 seg subida) maximiza la resistencia."
+        },
+        {
+          "name": "Bulgarian Split Squat",
+          "nameEs": "Sentadilla búlgara",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "15 c/lado",
+          "rest": 60,
+          "instructions": "Con el pie trasero elevado en un banco, baja hasta que la rodilla trasera casi toque el suelo. Sube empujando desde el talón delantero. Este ejercicio unilateral desarrolla equilibrio y fuerza resistencia superior.",
+          "tip": "La sentadilla búlgara es superior a la sentadilla normal para desarrollo de cuádriceps."
+        },
+        {
+          "name": "Dumbbell Snatch",
+          "nameEs": "Snatch con mancuerna",
+          "muscle": "Shoulders",
+          "sets": 4,
+          "reps": "10 c/lado",
+          "rest": 60,
+          "instructions": "Desde el suelo, jala la mancuerna explosivamente sobre la cabeza en un solo movimiento usando la potencia de las caderas. Bloquea el codo arriba y controla el descenso. Es un ejercicio de potencia y resistencia combinados.",
+          "tip": "La potencia viene de las caderas — el brazo solo guía la mancuerna, no la jala."
+        },
+        {
+          "name": "Pistol Squat",
+          "nameEs": "Sentadilla pistola",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "8 c/lado",
+          "rest": 60,
+          "instructions": "De pie sobre una pierna, baja a sentadilla completa con la otra pierna extendida al frente. Requiere fuerza, flexibilidad y equilibrio simultáneamente. Si no puedes hacer el rango completo, usa una superficie de apoyo.",
+          "tip": "Es el test definitivo de fuerza funcional de piernas — dominarlo toma semanas."
+        },
+        {
+          "name": "L-Sit Hold",
+          "nameEs": "Aguante en L (paralelas o suelo)",
+          "muscle": "Abs",
+          "sets": 4,
+          "reps": "20-30 seg",
+          "rest": 45,
+          "instructions": "Apoyado en paralelas o en el suelo con manos al lado del cuerpo, eleva las piernas extendidas hasta la posición L. Mantén los brazos extendidos y el core apretado. Es un ejercicio de compresión extrema del core.",
+          "tip": "Si no puedes extender las piernas, comienza con rodillas dobladas (tucked L-sit)."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "endurance",
+    "level": "intermediate",
+    "muscles": ["Quadriceps", "Hamstrings", "Glutes", "Abs", "Calves"],
+    "equip": ["Bodyweight"],
+    "duration": 30,
+    "workout_data": {
+      "title": "LEG ENDURANCE — RESISTENCIA DE PIERNAS",
+      "tagline": "Piernas que no paran, cuerpo que no falla.",
+      "totalTime": 30,
+      "exercises": [
+        {
+          "name": "Jump Squat",
+          "nameEs": "Sentadilla con salto",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Baja a sentadilla y explota hacia arriba en un salto. Aterriza suave con rodillas flexionadas y baja inmediatamente a la siguiente rep. Para resistencia, mantén el ritmo durante toda la serie sin pausas.",
+          "tip": "El contacto con el suelo debe ser breve — como si el suelo quemara."
+        },
+        {
+          "name": "Alternating Lunge",
+          "nameEs": "Estocada alterna",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "20 total",
+          "rest": 45,
+          "instructions": "Alterna estocadas hacia adelante con cada pierna sin pausa entre ellas. Mantén el torso erguido y el core activo durante todo el set. La continuidad sin pausas es clave para la resistencia muscular.",
+          "tip": "Agrega un salto entre estocadas para convertirlo en una versión pliométrica."
+        },
+        {
+          "name": "Nordic Curl",
+          "nameEs": "Curl nórdico",
+          "muscle": "Hamstrings",
+          "sets": 3,
+          "reps": "8-10",
+          "rest": 60,
+          "instructions": "Fija los talones bajo algo pesado, inclínate lentamente hacia adelante controlando la caída con los isquiotibiales. Empuja con las manos al llegar al suelo y vuelve arriba usando los isquios. Es uno de los ejercicios más efectivos para isquiotibiales.",
+          "tip": "El nórdico reduce el riesgo de lesión de isquiotibiales hasta en un 51%."
+        },
+        {
+          "name": "Wall Sit",
+          "nameEs": "Sentadilla isométrica en pared",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "45-60 seg",
+          "rest": 45,
+          "instructions": "Espalda contra la pared con rodillas a 90°, mantén la posición durante el tiempo indicado. Es un ejercicio isométrico que desarrolla resistencia muscular de cuádriceps específicamente. No te apoyes en los muslos con las manos.",
+          "tip": "Añade contracción de cuádriceps activa para mayor activación durante el hold."
+        },
+        {
+          "name": "Calf Raise",
+          "nameEs": "Elevación de talones",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "25-30",
+          "rest": 30,
+          "instructions": "De pie con pies paralelos, sube en puntas de pie lo más alto posible y baja lentamente por debajo del nivel inicial si hay un escalón. Las pantorrillas necesitan alto volumen para responder — 25-30 reps mínimo.",
+          "tip": "Los gemelos responden mejor a alto volumen que a alta intensidad."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Biceps", "Triceps"],
+    "equip": ["Dumbbells", "Cables"],
+    "duration": 45,
+    "workout_data": {
+      "title": "ARM DAY — BRAZOS VOLUMINOSOS",
+      "tagline": "Bíceps y tríceps que hablan por sí solos.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "EZ Bar Curl",
+          "nameEs": "Curl con barra EZ",
+          "muscle": "Biceps",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Con agarre supino en la barra EZ, sube hasta contraer completamente el bíceps manteniendo los codos pegados al torso. La barra EZ reduce el estrés en las muñecas comparado con la barra recta. Baja completamente en 2-3 segundos.",
+          "tip": "El agarre medio en la barra EZ es el que más activa el bíceps largo."
+        },
+        {
+          "name": "Cable Curl",
+          "nameEs": "Curl en polea baja",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "La polea mantiene tensión constante en el bíceps durante todo el movimiento, incluyendo la parte baja donde las mancuernas tienen poca resistencia. Sube hasta la contracción completa y baja controladamente.",
+          "tip": "El cable es superior a las mancuernas para la porción baja del movimiento del curl."
+        },
+        {
+          "name": "Incline Dumbbell Curl",
+          "nameEs": "Curl inclinado con mancuernas",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "Sentado en banco inclinado a 60°, los brazos cuelgan perpendiculares al suelo. Sube las mancuernas con supinación. La inclinación crea un mayor estiramiento del bíceps en la posición inicial.",
+          "tip": "El curl inclinado activa la cabeza larga del bíceps más que el curl tradicional."
+        },
+        {
+          "name": "Tricep Pushdown",
+          "nameEs": "Extensión de tríceps en polea",
+          "muscle": "Triceps",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "De pie frente a la polea alta, empuja hacia abajo manteniendo los codos fijos al lado del torso. Extiende completamente los codos y vuelve controladamente. Usa agarre recto, en V o de cuerda para variar la activación.",
+          "tip": "La cuerda permite mayor pronación al final para mayor contracción del tríceps lateral."
+        },
+        {
+          "name": "Overhead Cable Extension",
+          "nameEs": "Extensión de tríceps sobre cabeza en polea",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "De espaldas a la polea alta con cuerda, inclínate levemente hacia adelante y extiende los brazos sobre la cabeza. La posición sobre la cabeza activa la cabeza larga del tríceps (la más grande). Mantén los codos apuntando al frente.",
+          "tip": "La cabeza larga del tríceps es la más grande — trabájala con ejercicios sobre la cabeza."
+        },
+        {
+          "name": "Hammer Curl to Press",
+          "nameEs": "Curl martillo a press",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "Sube las mancuernas con agarre neutro (curl martillo) y en la posición alta continúa presionando hacia arriba hasta extender completamente los brazos. Baja controladamente. Trabaja bíceps, braquial y hombro en un movimiento.",
+          "tip": "Este movimiento compuesto permite manejar más peso que los aislamientos puros."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Abs"],
+    "equip": ["Bodyweight", "Dumbbells"],
+    "duration": 30,
+    "workout_data": {
+      "title": "CORE SCULPTOR — CORE DEFINIDO",
+      "tagline": "El core fuerte es la base de todo movimiento.",
+      "totalTime": 30,
+      "exercises": [
+        {
+          "name": "Weighted Crunch",
+          "nameEs": "Crunch con peso",
+          "muscle": "Abs",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Recostado con una mancuerna sobre el pecho, eleva los hombros del suelo contrayendo el abdomen. No jales el cuello con las manos. Mantén 1 segundo de contracción máxima en la posición alta.",
+          "tip": "Añadir carga al crunch estimula el crecimiento del recto abdominal como cualquier otro músculo."
+        },
+        {
+          "name": "Hanging Knee Raise",
+          "nameEs": "Elevación de rodillas colgado",
+          "muscle": "Abs",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Colgado de la barra, eleva las rodillas hacia el pecho apretando el abdomen. Baja controladamente sin balancear el cuerpo. Cuando domines las rodillas, progresa a piernas extendidas.",
+          "tip": "No uses impulso — el movimiento debe ser puro trabajo del core."
+        },
+        {
+          "name": "Russian Twist",
+          "nameEs": "Rotación rusa con mancuerna",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "20 total",
+          "rest": 45,
+          "instructions": "Sentado con mancuerna y pies levantados, rota el torso de lado a lado llevando la mancuerna a cada cadera. Mantén la espalda recta durante las rotaciones. Los oblicuos son fundamentales para la estabilidad lumbar.",
+          "tip": "Aumentar el peso progresivamente en este ejercicio desarrolla oblicuos más densos."
+        },
+        {
+          "name": "Plank with Reach",
+          "nameEs": "Plancha con extensión de brazo",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "10 c/lado",
+          "rest": 45,
+          "instructions": "En posición de plancha alta, alterna extendiendo cada brazo al frente manteniendo el cuerpo perfectamente estático. No rotar las caderas es el objetivo principal — requiere una activación de core mucho mayor que la plancha estática.",
+          "tip": "Si las caderas rotan, amplía la base de apoyo de los pies."
+        },
+        {
+          "name": "Bicycle Crunch",
+          "nameEs": "Crunch de bicicleta",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "20 total",
+          "rest": 45,
+          "instructions": "Recostado, alterna llevando el codo hacia la rodilla opuesta con movimiento de pedaleo. El movimiento debe ser lento y controlado — no lo hagas rápido. Siente la contracción del oblicuo en cada rotación.",
+          "tip": "Lento y controlado activa 3 veces más los oblicuos que hacerlo rápido."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "fat_loss",
+    "level": "intermediate",
+    "muscles": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+    "equip": ["Dumbbells", "Bodyweight"],
+    "duration": 45,
+    "workout_data": {
+      "title": "LEGS ON FIRE — PIERNAS DEFINIDAS",
+      "tagline": "Quema desde los cuádriceps hasta los gemelos.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Dumbbell Squat Jump",
+          "nameEs": "Sentadilla con salto y mancuernas",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "12",
+          "rest": 60,
+          "instructions": "Con mancuernas ligeras a los lados, baja a sentadilla y explota hacia arriba en un salto. Aterriza suave y baja inmediatamente a la siguiente rep. El peso añade resistencia sin eliminar la capacidad pliométrica.",
+          "tip": "Usa 30-40% del peso que usarías en sentadilla normal para mantener la calidad del salto."
+        },
+        {
+          "name": "Walking Lunge",
+          "nameEs": "Estocada caminando",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "20 total",
+          "rest": 60,
+          "instructions": "Avanza dando estocadas alternas con mancuernas. Cada paso es una estocada completa hasta que la rodilla trasera casi toque el suelo. Mantén el torso erguido y los pasos constantes sin pausa.",
+          "tip": "La estocada caminando activa más glúteo que la estocada estática."
+        },
+        {
+          "name": "Romanian Deadlift",
+          "nameEs": "Peso muerto rumano",
+          "muscle": "Hamstrings",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Bisagra desde la cadera bajando las mancuernas por las piernas. El estiramiento de los isquiotibiales al bajar es el estímulo principal. Vuelve arriba empujando las caderas hacia adelante apretando los glúteos.",
+          "tip": "Mantén los hombros hacia atrás para no redondear la espalda al bajar."
+        },
+        {
+          "name": "Box Jump",
+          "nameEs": "Salto al cajón",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "10",
+          "rest": 60,
+          "instructions": "Desde posición de pie, salta con ambos pies sobre un cajón o superficie elevada. Aterriza suavemente con rodillas dobladas. Baja caminando (no saltando) para reducir el impacto. Es un ejercicio de potencia explosiva.",
+          "tip": "Aterriza en la parte media del pie — ni en los talones ni solo en las puntas."
+        },
+        {
+          "name": "Dumbbell Calf Raise",
+          "nameEs": "Elevación de talones",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "20-25",
+          "rest": 30,
+          "instructions": "Con mancuernas a los lados, sube en puntas de pie hasta la contracción máxima. Baja por debajo del nivel del suelo si hay escalón para maximizar el rango. Las pantorrillas requieren alto volumen para desarrollarse.",
+          "tip": "Pausa 1 segundo arriba y 1 segundo abajo para eliminar el rebote."
+        }
+      ]
+    }
+  }
+]

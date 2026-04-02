@@ -1,0 +1,510 @@
+[
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Calves", "Biceps", "Abs"],
+    "equip": ["Barbell"],
+    "duration": 45,
+    "workout_data": {
+      "title": "BARRA — BRAZOS Y PANTORRILLAS",
+      "tagline": "Completa el tren superior con barra.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Standing Barbell Calf Raise",
+          "nameEs": "Elevación de talones de pie con barra",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Coloca la barra sobre los trapecios como en una sentadilla. De pie con la parte delantera de los pies sobre un escalón o disco, sube en punta de pies lo más alto posible. Mantén 1 segundo arriba y baja hasta que el talón quede por debajo del nivel del escalón.",
+          "tip": "Haz el movimiento lento en la bajada — el estiramiento es donde más crece la pantorrilla."
+        },
+        {
+          "name": "Seated Barbell Calf Raise",
+          "nameEs": "Elevación de talones sentado con barra",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Sentado en un banco con las rodillas a 90°, apoya la barra sobre los muslos justo encima de las rodillas (usa una toalla de almohadilla). Con la parte delantera de los pies sobre un disco o escalón, sube en puntas de pie contrayendo el sóleo. Trabaja rango completo.",
+          "tip": "Sentado aísla el sóleo más que el gemelo — no descuides esta posición."
+        },
+        {
+          "name": "Single-Leg Barbell Calf Raise",
+          "nameEs": "Elevación de talones unilateral con barra",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "12-15 c/lado",
+          "rest": 45,
+          "instructions": "Con la barra sobre los trapecios, apoya un solo pie sobre un escalón y cruza el otro por detrás. Sube en punta de pie lo más alto posible manteniendo la rodilla ligeramente flexionada. Baja lentamente por debajo del nivel del escalón para máximo estiramiento.",
+          "tip": "El trabajo unilateral corrige desbalances entre pantorrillas — úsalo si notas diferencias de tamaño."
+        },
+        {
+          "name": "Barbell Donkey Calf Raise",
+          "nameEs": "Elevación de talones tipo burro con barra",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Inclina el torso a 90° apoyando las manos en un banco o barra fija. Con la barra descansando sobre la cadera (usa almohadilla), sube en puntas de pie con los pies sobre un escalón. Esta posición estira el gemelo al máximo durante todo el recorrido.",
+          "tip": "La posición inclinada es la que mayor rango de movimiento genera en el gemelo."
+        },
+        {
+          "name": "EZ-Bar Preacher Curl",
+          "nameEs": "Curl predicador con barra EZ",
+          "muscle": "Biceps",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "Apoya los tríceps en el almohadón del banco predicador con la barra EZ en agarre supino. Sube la barra hasta que los antebrazos queden perpendiculares al suelo y baja de forma muy controlada sin extender completamente el codo. El banco elimina el balanceo del torso.",
+          "tip": "No bajes hasta extender por completo — mantén tensión en el músculo en todo momento."
+        },
+        {
+          "name": "Barbell Rollout",
+          "nameEs": "Ruedo abdominal con barra",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "8-12",
+          "rest": 60,
+          "instructions": "Arrodillado en el suelo, agarra la barra con los discos puestos. Rueda hacia adelante extendiendo los brazos hasta que el cuerpo quede casi paralelo al suelo. Contrae el core para volver a la posición inicial sin dejar caer las caderas.",
+          "tip": "Es uno de los ejercicios de core más demandantes — empieza con un rango corto y progresa."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Calves", "Quadriceps", "Hamstrings"],
+    "equip": ["Cables"],
+    "duration": 50,
+    "workout_data": {
+      "title": "POLEAS — PIERNAS COMPLETAS",
+      "tagline": "Define y fortalece el tren inferior con polea.",
+      "totalTime": 50,
+      "exercises": [
+        {
+          "name": "Cable Standing Calf Raise",
+          "nameEs": "Elevación de talones de pie en polea",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Coloca el arnés de cadera o usa un cinturón de lastre conectado a la polea baja. De pie con los pies sobre un escalón y el cable pasando entre las piernas, sube en puntas de pie manteniendo las rodillas rectas. La tensión constante del cable aumenta la dificultad en todo el recorrido.",
+          "tip": "Si no hay arnés, sujeta el cable con la mano y apoya la otra en la máquina para equilibrio."
+        },
+        {
+          "name": "Single-Leg Cable Calf Raise",
+          "nameEs": "Elevación de talones unilateral en polea",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "12-15 c/lado",
+          "rest": 45,
+          "instructions": "Con el tobillo enganchado a la polea baja mediante correa, apoya el pie de trabajo sobre un escalón y sube en punta de pie al máximo. La resistencia constante de la polea hace el ejercicio más desafiante que el peso libre en la bajada.",
+          "tip": "El trabajo unilateral con polea maximiza el tiempo bajo tensión en cada pantorrilla."
+        },
+        {
+          "name": "Cable Seated Calf Raise",
+          "nameEs": "Elevación de talones sentado en polea",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Sentado frente a la polea baja con las rodillas a 90° y los pies sobre un escalón, engancha el cable al cinturón o sujétalo con las manos sobre los muslos. Sube en puntas de pie aislando el sóleo. Baja lentamente hasta el estiramiento completo.",
+          "tip": "Sentado recluta principalmente el sóleo — combínalo con calf raises de pie para desarrollo completo."
+        },
+        {
+          "name": "Cable Donkey Calf Raise",
+          "nameEs": "Elevación de talones tipo burro en polea",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Inclinado a 90° con las manos apoyadas en la máquina y el cable enganchado a la cadera, coloca los pies sobre un escalón. Sube en puntas de pie contrayendo fuerte los gemelos. La posición del torso inclinado estira el gemelo más que de pie.",
+          "tip": "Esta variante es favorita de Arnold Schwarzenegger por el rango de movimiento superior."
+        },
+        {
+          "name": "Cable Leg Extension",
+          "nameEs": "Extensión de pierna en polea",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "De pie frente a la polea baja con el tobillo enganchado a la correa, extiende la pierna hacia adelante hasta que quede recta. Mantén el muslo quieto y solo mueve la rodilla. Baja de forma controlada sintiendo el cuádriceps trabajar en todo el recorrido.",
+          "tip": "Variante ideal si no tienes máquina de extensión — enfoca la contracción en la parte baja del cuádriceps."
+        },
+        {
+          "name": "Cable Squat",
+          "nameEs": "Sentadilla en polea baja",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 75,
+          "instructions": "Sujeta el cable a la altura del pecho con ambas manos. Da un paso atrás para generar tensión y desciende en sentadilla manteniendo el torso erguido. La polea actúa como contrapeso permitiendo una postura más vertical. Empuja desde los talones al subir.",
+          "tip": "La sentadilla en polea es ideal para aprender la técnica correcta ya que facilita la postura vertical."
+        },
+        {
+          "name": "Cable Bulgarian Split Squat",
+          "nameEs": "Sentadilla búlgara en polea",
+          "muscle": "Quadriceps",
+          "sets": 3,
+          "reps": "10-12 c/lado",
+          "rest": 75,
+          "instructions": "Apoya el pie trasero en un banco detrás de ti y sujeta el cable de la polea baja con la mano del mismo lado. Desciende doblando la rodilla delantera hasta que el muslo quede paralelo al suelo. Empuja desde el talón delantero para subir.",
+          "tip": "El trabajo unilateral expone y corrige desbalances de fuerza entre piernas más que la sentadilla bilateral."
+        },
+        {
+          "name": "Cable Standing Leg Curl",
+          "nameEs": "Curl de isquiotibiales de pie en polea",
+          "muscle": "Hamstrings",
+          "sets": 4,
+          "reps": "12-15 c/lado",
+          "rest": 60,
+          "instructions": "De pie frente a la polea baja con el tobillo enganchado a la correa, dobla la rodilla llevando el talón hacia el glúteo. Mantén el muslo quieto y apoya la mano en la máquina para equilibrio. Baja de forma controlada sin dejar caer el peso.",
+          "tip": "Mantén el muslo perpendicular al suelo durante todo el movimiento para aislar el isquiotibial."
+        },
+        {
+          "name": "Cable Romanian Deadlift",
+          "nameEs": "Peso muerto rumano en polea",
+          "muscle": "Hamstrings",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "De pie frente a la polea baja sujetando el cable con ambas manos, bisagra desde la cadera bajando el torso mientras las caderas van hacia atrás. Siente el estiramiento en los isquiotibiales antes de volver arriba empujando caderas hacia adelante.",
+          "tip": "La tensión constante de la polea hace el movimiento más difícil que la barra en la posición de estiramiento."
+        },
+        {
+          "name": "Cable Kneeling Leg Curl",
+          "nameEs": "Curl de isquiotibiales arrodillado en polea",
+          "muscle": "Hamstrings",
+          "sets": 3,
+          "reps": "12-15 c/lado",
+          "rest": 60,
+          "instructions": "Arrodillado de espaldas a la polea con el tobillo enganchado, dobla la rodilla llevando el talón hacia el glúteo. Mantén la cadera extendida durante todo el movimiento para mayor activación del isquiotibial. Baja lentamente.",
+          "tip": "La posición arrodillada aumenta la activación de la cabeza corta del bíceps femoral."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Glutes", "Abs"],
+    "equip": ["Cables"],
+    "duration": 40,
+    "workout_data": {
+      "title": "POLEAS — GLÚTEOS Y CORE",
+      "tagline": "Moldea glúteos y fortalece el núcleo con polea.",
+      "totalTime": 40,
+      "exercises": [
+        {
+          "name": "Cable Glute Kickback",
+          "nameEs": "Patada trasera de glúteos en polea",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "15-20 c/lado",
+          "rest": 45,
+          "instructions": "Con la correa enganchada al tobillo y la polea en posición baja, apoya las manos en la máquina. Extiende la pierna hacia atrás y arriba manteniendo la espalda recta y el core contraído. Contrae el glúteo en el punto más alto y baja lentamente.",
+          "tip": "No arquees la zona lumbar al subir — el movimiento debe venir exclusivamente del glúteo."
+        },
+        {
+          "name": "Cable Pull-Through",
+          "nameEs": "Jalón entre piernas en polea",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "De espaldas a la polea baja, agarra el cable entre las piernas y da un paso al frente. Con los pies separados al ancho de hombros, bisagra hacia adelante dejando el cable ir entre las piernas. Extiende las caderas empujando hacia adelante y apretando los glúteos.",
+          "tip": "El pull-through enseña el patrón de bisagra de cadera mejor que cualquier otro ejercicio."
+        },
+        {
+          "name": "Cable Crunch",
+          "nameEs": "Crunch en polea alta",
+          "muscle": "Abs",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Arrodillado frente a la polea alta con la cuerda de tríceps, sujeta los extremos junto a las orejas. Dobla el torso hacia abajo contrayendo los abdominales hasta que los codos toquen los muslos. Vuelve lentamente resistiendo el peso en todo el recorrido.",
+          "tip": "El movimiento viene de doblar la columna, no de empujar con los brazos — visualiza que aplastas la caja torácica contra las caderas."
+        },
+        {
+          "name": "Pallof Press",
+          "nameEs": "Press Pallof antirotación",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "10-12 c/lado",
+          "rest": 60,
+          "instructions": "De pie perpendicular a la polea a altura de pecho, sujeta el cable con ambas manos frente al pecho. Extiende los brazos alejando el cable del cuerpo y resiste la rotación manteniendo el torso recto. Vuelve el cable al pecho y repite. Cambia de lado.",
+          "tip": "El Pallof Press es un ejercicio antirotación — si el torso gira hacia la polea, el peso está muy alto."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Calves", "Biceps", "Triceps"],
+    "equip": ["Machines"],
+    "duration": 45,
+    "workout_data": {
+      "title": "MÁQUINAS — BRAZOS Y PANTORRILLAS",
+      "tagline": "Aísla bíceps, tríceps y pantorrillas con precisión.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Seated Calf Raise Machine",
+          "nameEs": "Elevación de talones sentado en máquina",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Siéntate en la máquina con las rodillas bajo el almohadón y la parte delantera de los pies sobre la plataforma. Sube en puntas de pie lo más alto posible contrayendo el sóleo. Baja hasta el estiramiento completo en cada repetición.",
+          "tip": "La máquina sentado trabaja principalmente el sóleo — indispensable para pantorrillas completas."
+        },
+        {
+          "name": "Standing Calf Raise Machine",
+          "nameEs": "Elevación de talones de pie en máquina",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Coloca los hombros bajo los almohadones con la parte delantera de los pies sobre la plataforma. Sube en puntas de pie lo más alto posible y baja completamente hasta sentir el estiramiento en el gemelo. Trabaja el rango completo sin rebote.",
+          "tip": "Experimenta con pies en paralelo, hacia adentro y hacia afuera para estimular distintas porciones del gemelo."
+        },
+        {
+          "name": "Leg Press Calf Raise",
+          "nameEs": "Elevación de talones en prensa de piernas",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "20-25",
+          "rest": 45,
+          "instructions": "En la prensa, coloca solo la parte delantera de los pies en el borde inferior de la plataforma. Con las piernas casi extendidas, empuja en puntas de pie. Baja lentamente hasta que los talones queden por debajo de la plataforma para máximo estiramiento.",
+          "tip": "Puedes usar más peso que en otras variantes — aprovecha para sobrecargar las pantorrillas."
+        },
+        {
+          "name": "Single-Leg Calf Raise Machine",
+          "nameEs": "Elevación de talones unilateral en máquina",
+          "muscle": "Calves",
+          "sets": 3,
+          "reps": "12-15 c/lado",
+          "rest": 45,
+          "instructions": "En la máquina de calf raises de pie, apoya solo un pie sobre la plataforma. Realiza el movimiento completo de elevación con una sola pierna para mayor tensión y rango de movimiento. Cruza el otro pie por detrás para no apoyarlo.",
+          "tip": "El trabajo unilateral revela y corrige diferencias de fuerza entre pantorrillas."
+        },
+        {
+          "name": "Machine Preacher Curl",
+          "nameEs": "Curl predicador en máquina",
+          "muscle": "Biceps",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "Siéntate con los tríceps apoyados en el almohadón de la máquina predicador. Agarra las empuñaduras en supinación y sube hasta que los antebrazos queden verticales. Baja de forma muy lenta y controlada sin extender completamente el codo para mantener tensión.",
+          "tip": "La máquina elimina el trampeo del torso — es perfecto para aislar el bíceps con control total."
+        },
+        {
+          "name": "Machine Bicep Curl",
+          "nameEs": "Curl de bíceps en máquina",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Sentado en la máquina con los codos apoyados en el almohadón, agarra las empuñaduras y sube contrayendo el bíceps. Mantén los codos quietos durante todo el movimiento. Baja de forma controlada resistiendo el peso en toda la trayectoria.",
+          "tip": "Ajusta la altura del asiento para que los codos queden alineados con el eje de rotación de la máquina."
+        },
+        {
+          "name": "Tricep Press Machine",
+          "nameEs": "Press de tríceps en máquina",
+          "muscle": "Triceps",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "Sentado con la espalda apoyada, agarra las empuñaduras a la altura de los hombros. Extiende los brazos empujando hacia abajo hasta el bloqueo completo del codo. Vuelve lentamente a la posición inicial controlando el peso.",
+          "tip": "Mantén los codos cerca del torso y no dejes que los hombros suban durante el movimiento."
+        },
+        {
+          "name": "Machine Overhead Tricep Extension",
+          "nameEs": "Extensión de tríceps sobre cabeza en máquina",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Sentado de espaldas a la máquina, agarra las empuñaduras detrás de la cabeza. Extiende los codos hacia arriba hasta que los brazos queden rectos. Mantén los codos apuntando al techo durante todo el recorrido y baja lentamente.",
+          "tip": "Este ángulo trabaja la cabeza larga del tríceps en estiramiento — la porción más grande del músculo."
+        },
+        {
+          "name": "Assisted Dip Machine",
+          "nameEs": "Fondos asistidos en máquina",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "Sube a la plataforma de la máquina de fondos asistidos y selecciona el peso de asistencia adecuado. Baja el cuerpo doblando los codos hasta que la parte superior del brazo quede paralela al suelo. Empuja hacia arriba extendiendo los codos completamente.",
+          "tip": "A mayor peso de asistencia, más fácil es el ejercicio — reduce la asistencia progresivamente."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Quadriceps", "Glutes", "Abs"],
+    "equip": ["Machines"],
+    "duration": 45,
+    "workout_data": {
+      "title": "MÁQUINAS — PIERNAS Y CORE",
+      "tagline": "Tren inferior y core con máquinas.",
+      "totalTime": 45,
+      "exercises": [
+        {
+          "name": "Hack Squat Machine",
+          "nameEs": "Sentadilla Hack en máquina",
+          "muscle": "Quadriceps",
+          "sets": 4,
+          "reps": "10-12",
+          "rest": 75,
+          "instructions": "Apoya los hombros en los almohadones y los pies en la plataforma a la anchura de caderas. Desbloquea los seguros y desciende hasta que los muslos queden paralelos o por debajo. Empuja desde los talones extendiendo las piernas y apretando los cuádriceps arriba.",
+          "tip": "Pies más bajos en la plataforma aumentan la activación del cuádriceps; más altos, del glúteo."
+        },
+        {
+          "name": "Hip Abduction Machine",
+          "nameEs": "Abducción de cadera en máquina",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Sentado con las rodillas presionando las almohadillas, abre las piernas hacia afuera venciendo la resistencia de la máquina. Mantén la contracción del glúteo medio en el punto más abierto. Vuelve lentamente a la posición inicial sin dejar que el peso caiga.",
+          "tip": "Inclínate ligeramente hacia adelante en el asiento para mayor activación del glúteo medio."
+        },
+        {
+          "name": "Glute Kickback Machine",
+          "nameEs": "Patada trasera en máquina para glúteos",
+          "muscle": "Glutes",
+          "sets": 4,
+          "reps": "12-15 c/lado",
+          "rest": 45,
+          "instructions": "Apoya el antebrazo en la plataforma y coloca el pie de trabajo en el almohadón correspondiente. Empuja el almohadón hacia atrás y arriba extendiendo la cadera completamente. Contrae el glúteo en el punto más alto y baja lentamente.",
+          "tip": "No arquees la lumbar — el movimiento debe provenir de la extensión de cadera, no de la espalda baja."
+        },
+        {
+          "name": "Ab Crunch Machine",
+          "nameEs": "Crunch abdominal en máquina",
+          "muscle": "Abs",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Sentado en la máquina con las manos o brazos en las empuñaduras y los pies bajo el almohadón. Dobla el torso hacia adelante contrayendo los abdominales hasta el rango máximo. Vuelve lentamente sin perder la tensión abdominal.",
+          "tip": "La máquina permite añadir carga progresiva al crunch — fundamental para desarrollar el abdomen."
+        },
+        {
+          "name": "Torso Rotation Machine",
+          "nameEs": "Rotación de torso en máquina",
+          "muscle": "Abs",
+          "sets": 3,
+          "reps": "15-20 c/lado",
+          "rest": 45,
+          "instructions": "Sentado en la máquina, agarra las empuñaduras y gira el torso hacia un lado venciendo la resistencia. La rotación debe ser del torso, no de las caderas — mantén las caderas fijas durante todo el movimiento. Vuelve de forma controlada.",
+          "tip": "Trabaja los oblicuos de manera directa — esencial para el core funcional y la estabilidad lumbar."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Biceps", "Triceps"],
+    "equip": ["Bodyweight"],
+    "duration": 35,
+    "workout_data": {
+      "title": "CALISTENIA — BÍCEPS Y TRÍCEPS",
+      "tagline": "Construye brazos fuertes con peso corporal.",
+      "totalTime": 35,
+      "exercises": [
+        {
+          "name": "Chin-Up",
+          "nameEs": "Dominada supina",
+          "muscle": "Biceps",
+          "sets": 4,
+          "reps": "6-10",
+          "rest": 90,
+          "instructions": "Agarra la barra de dominadas con las palmas mirando hacia ti a la anchura de hombros. Tira hasta que la barbilla supere la barra manteniendo el core apretado. Baja de forma completamente controlada en 3-4 segundos.",
+          "tip": "El agarre supino activa el bíceps mucho más que el agarre prono — es el mejor ejercicio de bíceps con peso corporal."
+        },
+        {
+          "name": "Underhand Inverted Row",
+          "nameEs": "Remo invertido con agarre supino",
+          "muscle": "Biceps",
+          "sets": 4,
+          "reps": "10-15",
+          "rest": 60,
+          "instructions": "Debajo de una barra fija a altura de caderas, agarra la barra con las palmas hacia ti. Extiende el cuerpo en línea recta y tira del pecho hacia la barra doblando los codos. Aprieta los bíceps y los omóplatos en el punto más alto.",
+          "tip": "Cuanto más horizontal sea tu cuerpo, mayor la dificultad — ajusta el ángulo según tu nivel."
+        },
+        {
+          "name": "Bodyweight Bicep Curl",
+          "nameEs": "Curl de bíceps en barra baja",
+          "muscle": "Biceps",
+          "sets": 3,
+          "reps": "10-12",
+          "rest": 60,
+          "instructions": "Debajo de una barra a la altura de las caderas con el cuerpo en horizontal, coloca las manos en agarre supino a la anchura de hombros. Mantén el cuerpo rígido y dobla los codos llevando la frente hacia la barra. Solo los codos se mueven.",
+          "tip": "Mantén las caderas alineadas con los hombros — si caen, el ejercicio pierde efectividad."
+        },
+        {
+          "name": "Bench Tricep Dip",
+          "nameEs": "Fondos de tríceps en banco",
+          "muscle": "Triceps",
+          "sets": 4,
+          "reps": "12-15",
+          "rest": 60,
+          "instructions": "Con las manos apoyadas en el borde de un banco detrás de ti y los talones en el suelo, dobla los codos bajando las caderas hacia el suelo. Baja hasta que los brazos formen 90° y empuja hacia arriba extendiendo los codos completamente.",
+          "tip": "Mantén las caderas cerca del banco — cuanto más te alejas, mayor el rango de movimiento pero también el estrés en el hombro."
+        },
+        {
+          "name": "Close-Grip Push-Up",
+          "nameEs": "Flexión de agarre cerrado",
+          "muscle": "Triceps",
+          "sets": 3,
+          "reps": "10-15",
+          "rest": 60,
+          "instructions": "En posición de flexión con las manos justo bajo los hombros o más juntas, baja el cuerpo manteniendo los codos pegados al torso. Empuja hacia arriba extendiendo completamente los codos y contrayendo el tríceps en la parte superior.",
+          "tip": "Los codos pegados al torso son la clave — si se abren, el ejercicio pasa a trabajar más pecho."
+        }
+      ]
+    }
+  },
+  {
+    "goal": "hypertrophy",
+    "level": "intermediate",
+    "muscles": ["Calves"],
+    "equip": ["Dumbbells"],
+    "duration": 20,
+    "workout_data": {
+      "title": "MANCUERNAS — PANTORRILLAS",
+      "tagline": "Pantorrillas de acero con mancuernas.",
+      "totalTime": 20,
+      "exercises": [
+        {
+          "name": "Standing Dumbbell Calf Raise",
+          "nameEs": "Elevación de talones de pie con mancuernas",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "De pie con una mancuerna en cada mano y la parte delantera de los pies sobre un escalón o disco, sube en puntas de pie lo más alto posible. Mantén la contracción 1 segundo y baja lentamente hasta que el talón quede por debajo del nivel del escalón.",
+          "tip": "Varía la posición de los pies: paralelos para gemelo completo, pies adentro para la parte externa y pies afuera para la interna."
+        },
+        {
+          "name": "Seated Dumbbell Calf Raise",
+          "nameEs": "Elevación de talones sentado con mancuernas",
+          "muscle": "Calves",
+          "sets": 4,
+          "reps": "15-20",
+          "rest": 45,
+          "instructions": "Sentado en un banco con los pies sobre un disco o escalón, apoya una mancuerna vertical sobre cada muslo justo por encima de la rodilla. Sube en puntas de pie contrayendo el sóleo. Baja lentamente hasta el estiramiento máximo.",
+          "tip": "El sóleo solo se trabaja plenamente en posición sentada — es el músculo que da grosor a la pantorrilla cuando se mira de lado."
+        }
+      ]
+    }
+  }
+]
