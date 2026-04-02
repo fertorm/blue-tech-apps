@@ -68,6 +68,10 @@ export default function IronAI() {
   const [showAuthPrompt, setShowAuthPrompt] = useState(false);
   const [loginReturnTo, setLoginReturnTo] = useState("form");
 
+  // ── Premium ────────────────────────────────────────────────────────────────
+  const [isPremium, setIsPremium]         = useState(false)
+  const [showUpgrade, setShowUpgrade]     = useState(false)
+
   // ── Sesiones / Dashboard ───────────────────────────────────────────────────
   const [sessions, setSessions] = useState([]);
   const [dashLoading, setDashLoading] = useState(false);
@@ -76,6 +80,15 @@ export default function IronAI() {
   const [profile, setProfile] = useState(null);
   const [profileDraft, setProfileDraft] = useState(DEFAULT_PROFILE_DRAFT);
   const [profileSaved, setProfileSaved] = useState(false);
+
+  async function checkPremium(userId) {
+    const { data } = await supabase
+      .from("premium_users")
+      .select("purchased_at")
+      .eq("user_id", userId)
+      .maybeSingle()
+    setIsPremium(!!data)
+  }
 
   // ── Effects ────────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -99,6 +112,7 @@ export default function IronAI() {
 
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
+      if (session?.user) checkPremium(session.user.id)  // ← agregar esta línea
     });
 
     const {
@@ -106,8 +120,10 @@ export default function IronAI() {
     } = supabase.auth.onAuthStateChange(async (_event, session) => {
       setUser(session?.user ?? null);
       if (session?.user && showAuthPrompt) setShowAuthPrompt(false);
+      if (!session) setIsPremium(false)
 
       if (session?.user) {
+        checkPremium(session.user.id)
         // Sincronizar perfil
         const { data: profileData } = await supabase
           .from("user_profiles")
@@ -457,6 +473,8 @@ export default function IronAI() {
 
   // ── Props compartidas de navegación/auth ──────────────────────────────────
   const sharedNavProps = {
+    isPremium,
+    setShowUpgrade,
     loadDashboard,
     profile,
     setAuthEmail,
