@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import AuthPromptModal from "./components/AuthPromptModal.jsx";
+import UpgradeModal from "./components/UpgradeModal.jsx";
 import FormScreen from "./screens/FormScreen.jsx";
 import LoadingScreen from "./screens/LoadingScreen.jsx";
 import {
@@ -521,6 +522,11 @@ export default function IronAI() {
             setAuthSent(false);
             setAuthEmail("");
           }}
+        />
+        <UpgradeModal
+          isOpen={showUpgrade}
+          onClose={() => setShowUpgrade(false)}
+          userId={user?.id}
         />
 
         {/* Tabs de módulo (visibles en form, load y resultados) */}

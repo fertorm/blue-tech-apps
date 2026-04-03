@@ -1,5 +1,5 @@
 *{box-sizing:border-box;margin:0;padding:0}
-:root{color:#ccc;background:#111;font-family:"DM Sans",sans-serif}
+:root{color:#ccc;background:#111;font-family:"DM Sans",sans-serif;--muted:#888;--orange:#FF5C00}
 body{background:#111;color:#ccc;min-height:100vh}
 button,input,textarea,select{font:inherit}
 button{cursor:pointer}
@@ -160,3 +160,11 @@ input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;hei
 .cali-next-preview b{color:#888;font-style:normal}
 .hist-dot-cardio{background:#00bcd4}
 .hist-dot-cali{background:#9c27b0}
+/* ── Upgrade Modal ──────────────────────────────────────────────────── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
+.modal-box{background:#111;border:.5px solid #2a2a2a;border-radius:14px;padding:28px 24px;max-width:380px;width:100%;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.modal-icon   { font-size: 2.5rem; margin-bottom: .5rem; }
+.modal-title  { font-size: 1.3rem; font-weight: 900; letter-spacing: .12em; margin: 0 0 .5rem; }
+.modal-sub    { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
+.modal-perks  { list-style: none; padding: 0; margin: 0 0 1.5rem; text-align: left; display: flex; flex-direction: column; gap: .4rem; }
+.modal-perks li { font-size: .9rem; color: var(--orange); font-weight: 700; }
