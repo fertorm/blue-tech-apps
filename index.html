@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blue Tech Apps — Aplicaciones web para entrenamiento personal inteligente." />
+  <title>Blue Tech Apps</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d0d;
+      --bg2: #141414;
+      --border: #222;
+      --text: #f0f0f0;
+      --muted: #888;
+      --orange: #ff6400;
+      --orange-dim: rgba(255,100,0,.1);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 10;
+    }
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: 900;
+      letter-spacing: .15em;
+      color: var(--orange);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .85rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: color .15s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      color: var(--orange);
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -.01em;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 span { color: var(--orange); }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+    }
+    .hero-cta {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-weight: 900;
+      font-size: .85rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: .85rem 2.2rem;
+      border-radius: 4px;
+      transition: opacity .15s;
+    }
+    .hero-cta:hover { opacity: .85; }
+
+    /* ── APPS ── */
+    .section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .25em;
+      color: var(--orange);
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .app-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color .15s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .app-card:hover { border-color: var(--orange); }
+    .app-card.featured { border-color: var(--orange); background: var(--orange-dim); }
+
+    .app-badge {
+      display: inline-block;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      padding: .2rem .6rem;
+      border-radius: 2px;
+      background: var(--orange);
+      color: #fff;
+      width: fit-content;
+    }
+    .app-badge.soon {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .app-icon {
+      font-size: 2.2rem;
+    }
+    .app-name {
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: .05em;
+    }
+    .app-desc {
+      font-size: .9rem;
+      color: var(--muted);
+      flex: 1;
+    }
+    .app-link {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--orange);
+    }
+    .app-card.soon .app-link { color: var(--muted); }
+
+    /* ── FEATURES ── */
+    .features {
+      border-top: 1px solid var(--border);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .feature {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-bottom: .3rem;
+    }
+    .feature-title {
+      font-size: .95rem;
+      font-weight: 700;
+    }
+    .feature-desc {
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--orange); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav { padding: 1rem; }
+      .nav-links { gap: 1rem; }
+      .hero { padding: 4rem 1.2rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="#">BLUE TECH APPS</a>
+    <ul class="nav-links">
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-eyebrow">Tecnología para moverse mejor</p>
+    <h1>Apps para tu<br><span>entrenamiento</span></h1>
+    <p>
+      Herramientas web simples, rápidas y sin fricciones para que puedas enfocarte en lo que importa: entrenar.
+    </p>
+    <a class="hero-cta" href="https://iron-ai-ecru.vercel.app" target="_blank" rel="noopener">
+      Probar Iron AI gratis →
+    </a>
+  </section>
+
+  <!-- APPS -->
+  <section class="section" id="apps">
+    <p class="section-label">Nuestras apps</p>
+    <div class="apps-grid">
+
+      <a class="app-card featured" href="https://iron-ai-ecru.vercel.app" target="_blank" rel="noopener">
+        <span class="app-badge">Disponible</span>
+        <div class="app-icon">🏋️</div>
+        <div class="app-name">IRON AI</div>
+        <p class="app-desc">
+          Entrenador personal inteligente. Rutinas de fuerza, cardio y calistenia personalizadas. Seguimiento de progreso y métricas corporales.
+        </p>
+        <span class="app-link">Abrir app →</span>
+      </a>
+
+      <div class="app-card soon">
+        <span class="app-badge soon">Próximamente</span>
+        <div class="app-icon">🍎</div>
+        <div class="app-name">NUTRI AI</div>
+        <p class="app-desc">
+          Seguimiento nutricional inteligente. Calculá tus macros, registrá comidas y monitoreá tus objetivos de composición corporal.
+        </p>
+        <span class="app-link">En desarrollo</span>
+      </div>
+
+      <div class="app-card soon">
+        <span class="app-badge soon">Próximamente</span>
+        <div class="app-icon">😴</div>
+        <div class="app-name">RECOVERY AI</div>
+        <p class="app-desc">
+          Optimizá tu recuperación. Seguimiento de sueño, HRV y fatiga acumulada para entrenar más inteligente.
+        </p>
+        <span class="app-link">En desarrollo</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features">
+    <p class="section-label">Por qué Blue Tech Apps</p>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Sin instalación</div>
+        <p class="feature-desc">Todo funciona desde el navegador. Sin descargas, sin App Store.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <div class="feature-title">Privacidad primero</div>
+        <p class="feature-desc">Tus datos son tuyos. Sin rastreo publicitario, sin vender información.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💪</div>
+        <div class="feature-title">Gratis para empezar</div>
+        <p class="feature-desc">Probá sin tarjeta. Pagá solo si querés el historial completo.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌎</div>
+        <div class="feature-title">Hecho en Bolivia</div>
+        <p class="feature-desc">Diseñado para el mercado latinoamericano, con precios accesibles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contacto" style="border-top:1px solid var(--border); padding-top:3rem; text-align:center;">
+    <p class="section-label">Contacto</p>
+    <p style="color:var(--muted); margin-bottom:1rem;">¿Preguntas, sugerencias o soporte?</p>
+    <a href="mailto:hola@bluetechapps.com" style="color:var(--orange); font-weight:700; font-size:1.1rem; text-decoration:none;">
+      hola@bluetechapps.com
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Blue Tech Apps · Bolivia &nbsp;·&nbsp; <a href="https://iron-ai-ecru.vercel.app">Iron AI</a></p>
+  </footer>
+
+</body>
+</html>
