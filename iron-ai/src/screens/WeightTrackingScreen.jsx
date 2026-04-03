@@ -14,35 +14,53 @@ export default function WeightTrackingScreen({ supabase, user, onBack }) {
 
   useEffect(() => {
     loadLogs()
-  }, [])
+  }, [user.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   async function loadLogs() {
     setLoading(true)
-    const { data } = await supabase
-      .from("weight_logs")
-      .select("id, logged_at, weight_kg, note")
-      .eq("user_id", user.id)
-      .order("logged_at", { ascending: true })
-      .limit(90)
-    setLogs(data || [])
-    setLoading(false)
+    try {
+      const { data, error } = await supabase
+        .from("weight_logs")
+        .select("id, logged_at, weight_kg, note")
+        .eq("user_id", user.id)
+        .order("logged_at", { ascending: true })
+        .limit(90)
+      if (error) {
+        console.error("[loadLogs]", error.message)
+        return
+      }
+      setLogs(data || [])
+    } catch (err) {
+      console.error("[loadLogs] unexpected error", err)
+    } finally {
+      setLoading(false)
+    }
   }
 
   async function saveWeight() {
     const kg = parseFloat(weightInput)
     if (!kg || kg < 20 || kg > 300) return
     setSaving(true)
-    const today = new Date().toISOString().slice(0, 10)
-    await supabase.from("weight_logs").upsert(
-      { user_id: user.id, logged_at: today, weight_kg: kg, note: noteInput.trim() || null },
-      { onConflict: "user_id,logged_at" }
-    )
-    setWeightInput("")
-    setNoteInput("")
-    setSaved(true)
-    setTimeout(() => setSaved(false), 2000)
-    await loadLogs()
-    setSaving(false)
+    try {
+      const today = new Date().toISOString().slice(0, 10)
+      const { error } = await supabase.from("weight_logs").upsert(
+        { user_id: user.id, logged_at: today, weight_kg: kg, note: noteInput.trim() || null },
+        { onConflict: "user_id,logged_at" }
+      )
+      if (error) {
+        console.error("[saveWeight]", error.message)
+        return
+      }
+      setWeightInput("")
+      setNoteInput("")
+      setSaved(true)
+      setTimeout(() => setSaved(false), 2000)
+      await loadLogs()
+    } catch (err) {
+      console.error("[saveWeight] unexpected error", err)
+    } finally {
+      setSaving(false)
+    }
   }
 
   async function deleteLog(id) {
@@ -140,7 +158,7 @@ export default function WeightTrackingScreen({ supabase, user, onBack }) {
                   <div className="hist-dot" style={{ background: "#ff6400" }} />
                   <div className="hist-info">
                     <div className="hist-title">
-                      {parseFloat(log.weight_kg)} kg
+                      {parseFloat(log.weight_kg).toFixed(1)} kg
                       {log.note && <span className="weight-log-note"> — {log.note}</span>}
                     </div>
                     <div className="hist-meta">
