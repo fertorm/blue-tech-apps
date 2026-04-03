@@ -1,11 +1,13 @@
 export default function ProfileScreen({
   calcMetrics,
+  isPremium,
   onBack,
   profile,
   profileDraft,
   profileSaved,
   saveProfile,
   setProfileDraft,
+  setShowUpgrade,
 }) {
   const metrics = calcMetrics(profile);
 
@@ -98,13 +100,21 @@ export default function ProfileScreen({
           </button>
         )}
 
-        {metrics ? (
-          <>
-            <hr className="prof-divider" />
-            <h2 className="lbl">Tus métricas</h2>
-            <MetricsGrid metrics={metrics} />
-          </>
-        ) : null}
+        {profile?.weight && profile?.height && (
+          isPremium ? (
+            <>
+              <hr className="prof-divider" />
+              <h2 className="lbl">Tus métricas</h2>
+              <MetricsGrid metrics={metrics} />
+            </>
+          ) : (
+            <div className="premium-teaser" onClick={() => setShowUpgrade(true)}>
+              <span>🔒</span>
+              <p>Desbloqueá tus métricas corporales</p>
+              <small>IMC · TMB · TDEE · Peso ideal</small>
+            </div>
+          )
+        )}
       </section>
     </>
   );

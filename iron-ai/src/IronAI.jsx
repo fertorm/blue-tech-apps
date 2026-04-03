@@ -688,6 +688,8 @@ export default function IronAI() {
             <main role="main">
               <ProfileScreen
                 calcMetrics={calcMetrics}
+                isPremium={isPremium}
+                setShowUpgrade={setShowUpgrade}
                 onBack={backFromDashOrProfile}
                 profile={profile}
                 profileDraft={profileDraft}

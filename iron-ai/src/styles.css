@@ -168,3 +168,9 @@ input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;hei
 .modal-sub    { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
 .modal-perks  { list-style: none; padding: 0; margin: 0 0 1.5rem; text-align: left; display: flex; flex-direction: column; gap: .4rem; }
 .modal-perks li { font-size: .9rem; color: var(--orange); font-weight: 700; }
+/* ── Premium teaser ─────────────────────────────────────────────────── */
+.premium-teaser{border:1.5px dashed var(--orange);border-radius:10px;padding:1.5rem;text-align:center;cursor:pointer;margin-top:1rem;transition:background .15s}
+.premium-teaser:hover{background:rgba(255,100,0,.06)}
+.premium-teaser span{font-size:1.8rem}
+.premium-teaser p{font-weight:700;margin:.4rem 0 .2rem}
+.premium-teaser small{color:var(--muted);font-size:.8rem}
