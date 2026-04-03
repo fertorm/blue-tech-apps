@@ -450,7 +450,7 @@ export default function IronAI() {
   // ── Weight Tracking ────────────────────────────────────────────────────────
   function goToWeight() {
     if (!user) {
-      setLoginReturnTo("weight")
+      setLoginReturnTo("form")
       setScreen("login")
       setAuthSent(false)
       setAuthEmail("")
