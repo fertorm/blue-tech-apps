@@ -9,7 +9,7 @@ export default function ProfileScreen({
   setProfileDraft,
   setShowUpgrade,
 }) {
-  const metrics = calcMetrics(profile);
+  const metrics = isPremium ? calcMetrics(profile) : null;
 
   return (
     <>
@@ -108,11 +108,16 @@ export default function ProfileScreen({
               <MetricsGrid metrics={metrics} />
             </>
           ) : (
-            <div className="premium-teaser" onClick={() => setShowUpgrade(true)}>
+            <button
+              className="premium-teaser"
+              onClick={() => setShowUpgrade(true)}
+              type="button"
+              aria-label="Desbloquear métricas premium"
+            >
               <span>🔒</span>
               <p>Desbloqueá tus métricas corporales</p>
               <small>IMC · TMB · TDEE · Peso ideal</small>
-            </div>
+            </button>
           )
         )}
       </section>
