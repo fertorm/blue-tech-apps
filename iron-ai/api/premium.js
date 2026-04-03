@@ -1,6 +1,8 @@
-// api/premium.js
 import crypto from "crypto"
 import { createClient } from "@supabase/supabase-js"
+
+// Disable Vercel's automatic body parsing — we need raw bytes for HMAC
+export const config = { api: { bodyParser: false } }
 
 // Admin client — uses service role key to bypass RLS
 const supabaseAdmin = createClient(
@@ -8,13 +10,23 @@ const supabaseAdmin = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY
 )
 
+async function getRawBody(req) {
+  const chunks = []
+  for await (const chunk of req) {
+    chunks.push(typeof chunk === "string" ? Buffer.from(chunk) : chunk)
+  }
+  return Buffer.concat(chunks).toString("utf-8")
+}
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" })
   }
 
-  // 1. Verify Lemon Squeezy webhook signature
-  const rawBody = JSON.stringify(req.body)
+  // 1. Read raw body bytes (needed for correct HMAC verification)
+  const rawBody = await getRawBody(req)
+
+  // 2. Verify Lemon Squeezy webhook signature
   const signature = req.headers["x-signature"]
   const secret = process.env.LEMONSQUEEZY_WEBHOOK_SECRET
 
@@ -33,20 +45,28 @@ export default async function handler(req, res) {
     return res.status(401).json({ error: "Invalid signature" })
   }
 
-  // 2. Only handle order_created events
-  const { meta, data } = req.body
+  // 3. Parse body after signature is verified
+  let body
+  try {
+    body = JSON.parse(rawBody)
+  } catch {
+    return res.status(400).json({ error: "Invalid JSON" })
+  }
+
+  const { meta, data } = body
+
+  // 4. Only handle order_created events
   if (meta?.event_name !== "order_created") {
     return res.status(200).json({ received: true, skipped: true })
   }
 
-  // 3. Only activate on paid orders
+  // 5. Only activate on paid orders
   const status = data?.attributes?.status
   if (status !== "paid") {
     return res.status(200).json({ received: true, skipped: true })
   }
 
-  // 4. Extract user_id from custom data
-  // Lemon Squeezy sends custom data in meta.custom_data
+  // 6. Extract user_id from custom data
   const userId =
     meta?.custom_data?.user_id ||
     data?.attributes?.first_order_item?.checkout_custom?.user_id
@@ -56,7 +76,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Missing user_id in custom data" })
   }
 
-  // 5. Insert into premium_users
+  // 7. Insert into premium_users
   const paymentRef = String(data?.id || "")
   const { error } = await supabaseAdmin
     .from("premium_users")
