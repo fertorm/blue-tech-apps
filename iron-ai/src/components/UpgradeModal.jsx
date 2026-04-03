@@ -4,15 +4,16 @@ export default function UpgradeModal({ isOpen, onClose, userId }) {
 
   function handleUpgrade() {
     const baseUrl = import.meta.env.VITE_LEMONSQUEEZY_CHECKOUT_URL
+    if (!baseUrl) return
     const url = `${baseUrl}?checkout[custom][user_id]=${userId}`
     window.LemonSqueezy?.Url?.Open(url)
   }
 
   return (
-    <div className="modal-overlay" role="dialog" aria-modal="true" aria-label="Acceso Premium">
+    <div className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="upgrade-modal-title">
       <div className="modal-box">
         <div className="modal-icon">🔒</div>
-        <h2 className="modal-title">FEATURE PREMIUM</h2>
+        <h2 id="upgrade-modal-title" className="modal-title">FEATURE PREMIUM</h2>
         <p className="modal-sub">
           Registrá tu progreso y medí tu evolución real.
         </p>
