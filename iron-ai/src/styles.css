@@ -96,6 +96,7 @@ input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;hei
 .auth-modal-skip:hover{color:#ccc;border-color:#444}
 .dash-hdr,.prof-hdr{padding:18px 22px 14px;border-bottom:.5px solid #1e1e1e;display:flex;align-items:center;justify-content:space-between}
 .dash-title,.prof-title{font-family:"Bebas Neue",Impact,sans-serif;font-size:1.5rem;color:#F0EEE8;letter-spacing:.06em}
+.dash-hdr-actions{display:flex;gap:.5rem;align-items:center}
 .dash-body,.prof-wrap{padding:18px 22px;display:flex;flex-direction:column;gap:20px}
 .dash-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .stat-card,.metric-card{background:#131313;border:.5px solid #222;border-radius:10px;padding:12px 14px}

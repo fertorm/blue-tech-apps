@@ -30,6 +30,7 @@ const CardioFormScreen = lazy(() => import("./screens/CardioFormScreen.jsx"));
 const CardioWorkoutScreen = lazy(() => import("./screens/CardioWorkoutScreen.jsx"));
 const CaliFormScreen = lazy(() => import("./screens/CaliFormScreen.jsx"));
 const CaliWorkoutScreen = lazy(() => import("./screens/CaliWorkoutScreen.jsx"));
+const WeightTrackingScreen = lazy(() => import("./screens/WeightTrackingScreen.jsx"));
 
 function ScreenFallback() {
   return <LoadingScreen quote={QUOTES[0]} label="Cargando pantalla..." />;
@@ -446,6 +447,22 @@ export default function IronAI() {
     if (!error) setCaliCompleted(true);
   }
 
+  // ── Weight Tracking ────────────────────────────────────────────────────────
+  function goToWeight() {
+    if (!user) {
+      setLoginReturnTo("weight")
+      setScreen("login")
+      setAuthSent(false)
+      setAuthEmail("")
+      return
+    }
+    if (!isPremium) {
+      setShowUpgrade(true)
+      return
+    }
+    setScreen("weight")
+  }
+
   // ── Dashboard ──────────────────────────────────────────────────────────────
   async function loadDashboard() {
     setDashLoading(true);
@@ -482,6 +499,7 @@ export default function IronAI() {
 
   // ── Props compartidas de navegación/auth ──────────────────────────────────
   const sharedNavProps = {
+    goToWeight,
     isPremium,
     setShowUpgrade,
     loadDashboard,
@@ -678,8 +696,20 @@ export default function IronAI() {
               <DashboardScreen
                 dashLoading={dashLoading}
                 getWeekBars={getWeekBars}
+                goToWeight={goToWeight}
+                isPremium={isPremium}
                 onBack={backFromDashOrProfile}
                 sessions={sessions}
+              />
+            </main>
+          )}
+
+          {screen === "weight" && user && isPremium && (
+            <main role="main">
+              <WeightTrackingScreen
+                supabase={supabase}
+                user={user}
+                onBack={backFromDashOrProfile}
               />
             </main>
           )}

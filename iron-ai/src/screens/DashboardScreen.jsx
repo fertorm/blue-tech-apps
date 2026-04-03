@@ -5,6 +5,8 @@ import LoadingScreen from "./LoadingScreen.jsx";
 export default function DashboardScreen({
   dashLoading,
   getWeekBars,
+  goToWeight,
+  isPremium,
   onBack,
   sessions,
 }) {
@@ -16,9 +18,14 @@ export default function DashboardScreen({
     <>
       <header className="dash-hdr">
         <h1 className="dash-title">MI PROGRESO</h1>
-        <button className="hdr-auth-btn" onClick={onBack}>
-          ← Volver
-        </button>
+        <div className="dash-hdr-actions">
+          <button className="hdr-auth-btn" onClick={goToWeight} type="button">
+            {isPremium ? "⚖ Mi Peso" : "🔒 Mi Peso"}
+          </button>
+          <button className="hdr-auth-btn" onClick={onBack} type="button">
+            ← Volver
+          </button>
+        </div>
       </header>
 
       <section className="dash-body">
