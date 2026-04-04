@@ -31,16 +31,16 @@ export default function LoginScreen({
             <div className="auth-sent">
               ✓ Código enviado a <b>{authEmail}</b>
               <br />
-              Revisá tu bandeja de entrada e ingresá el código de 6 dígitos.
+              Revisá tu bandeja de entrada e ingresá el código de acceso.
             </div>
             <input
               className="auth-input"
               type="text"
               inputMode="numeric"
               pattern="[0-9]*"
-              maxLength={6}
+              maxLength={8}
               aria-label="Código de verificación"
-              placeholder="123456"
+              placeholder="39290832"
               value={authCode}
               onChange={(event) => setAuthCode(event.target.value.replace(/\D/g, ""))}
               onKeyDown={(event) => event.key === "Enter" && verifyOtp()}
@@ -49,7 +49,7 @@ export default function LoginScreen({
             {authError && <p className="auth-error">{authError}</p>}
             <button
               className="gbtn"
-              disabled={authLoading || authCode.length < 6}
+              disabled={authLoading || authCode.length < 6 || authCode.length > 8}
               onClick={verifyOtp}
             >
               {authLoading ? "VERIFICANDO..." : "VERIFICAR CÓDIGO"}
