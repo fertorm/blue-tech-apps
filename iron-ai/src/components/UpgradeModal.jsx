@@ -18,9 +18,9 @@ export default function UpgradeModal({ isOpen, onClose, userId }) {
           Registrá tu progreso y medí tu evolución real.
         </p>
         <ul className="modal-perks">
-          <li>✦ Historial de rutinas en la nube</li>
-          <li>✦ Perfil físico + métricas corporales</li>
+          <li>✦ TMB · TDEE · Peso saludable</li>
           <li>✦ Seguimiento de peso con gráfica</li>
+          <li>✦ Historial de rutinas en la nube</li>
         </ul>
         <button className="gbtn" onClick={handleUpgrade}>
           OBTENER ACCESO — $5

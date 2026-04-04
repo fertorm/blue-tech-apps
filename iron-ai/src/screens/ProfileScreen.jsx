@@ -9,7 +9,7 @@ export default function ProfileScreen({
   setProfileDraft,
   setShowUpgrade,
 }) {
-  const metrics = isPremium ? calcMetrics(profile) : null;
+  const metrics = calcMetrics(profile);
 
   return (
     <>
@@ -100,91 +100,106 @@ export default function ProfileScreen({
           </button>
         )}
 
-        {profile?.weight && profile?.height && (
-          isPremium ? (
-            <>
-              <hr className="prof-divider" />
-              <h2 className="lbl">Tus métricas</h2>
-              <MetricsGrid metrics={metrics} />
-            </>
-          ) : (
-            <button
-              className="premium-teaser"
-              onClick={() => setShowUpgrade(true)}
-              type="button"
-              aria-label="Desbloquear métricas premium"
-            >
-              <span>🔒</span>
-              <p>Desbloqueá tus métricas corporales</p>
-              <small>IMC · TMB · TDEE · Peso ideal</small>
-            </button>
-          )
+        {metrics && (
+          <>
+            <hr className="prof-divider" />
+            <h2 className="lbl">Tus métricas</h2>
+            <section className="metrics-grid" aria-label="Métricas físicas">
+
+              {/* IMC — gratis */}
+              <BmiCard metrics={metrics} />
+
+              {/* TMB — premium */}
+              {isPremium ? (
+                <article className="metric-card">
+                  <div className="metric-val metric-val-small">{metrics.bmr.toLocaleString()}</div>
+                  <div className="metric-lbl">TMB kcal/día</div>
+                  <div className="metric-sub">Calorías en reposo</div>
+                </article>
+              ) : (
+                <button className="metric-card metric-card-lock" onClick={() => setShowUpgrade(true)} type="button" aria-label="Desbloquear TMB premium">
+                  <span className="lock-icon">🔒</span>
+                  <div className="metric-lbl">TMB kcal/día</div>
+                  <div className="metric-sub">Premium</div>
+                </button>
+              )}
+
+              {/* TDEE — premium */}
+              {isPremium ? (
+                <article className="metric-card">
+                  <div className="metric-val metric-val-small">{metrics.tdee.toLocaleString()}</div>
+                  <div className="metric-lbl">TDEE kcal/día</div>
+                  <div className="metric-sub">Actividad moderada</div>
+                </article>
+              ) : (
+                <button className="metric-card metric-card-lock" onClick={() => setShowUpgrade(true)} type="button" aria-label="Desbloquear TDEE premium">
+                  <span className="lock-icon">🔒</span>
+                  <div className="metric-lbl">TDEE kcal/día</div>
+                  <div className="metric-sub">Premium</div>
+                </button>
+              )}
+
+              {/* Peso ideal — premium */}
+              {isPremium ? (
+                <article className="metric-card metric-card-full">
+                  <div className="metric-val metric-val-green">{metrics.idealMin} - {metrics.idealMax} kg</div>
+                  <div className="metric-lbl">Peso saludable para tu altura</div>
+                  <div className="metric-sub">Rango IMC 18.5 - 24.9</div>
+                </article>
+              ) : (
+                <button className="metric-card metric-card-full metric-card-lock" onClick={() => setShowUpgrade(true)} type="button" aria-label="Desbloquear peso saludable premium">
+                  <span className="lock-icon">🔒</span>
+                  <div className="metric-lbl">Peso saludable para tu altura</div>
+                  <div className="metric-sub">Premium</div>
+                </button>
+              )}
+
+            </section>
+          </>
         )}
       </section>
     </>
   );
 }
 
-function MetricsGrid({ metrics }) {
+function BmiCard({ metrics }) {
   const bmiNum = parseFloat(metrics.bmi);
   const markerPct = Math.min(95, Math.max(2, ((bmiNum - 10) / 30) * 100));
 
   return (
-    <section className="metrics-grid" aria-label="Métricas físicas">
-      <article className="metric-card metric-card-full">
-        <div className="metric-row">
-          <div>
-            <div className="metric-val" style={{ color: metrics.bmiColor }}>
-              {metrics.bmi}
-            </div>
-            <div className="metric-lbl">Índice de Masa Corporal</div>
+    <article className="metric-card metric-card-full">
+      <div className="metric-row">
+        <div>
+          <div className="metric-val" style={{ color: metrics.bmiColor }}>
+            {metrics.bmi}
           </div>
+          <div className="metric-lbl">Índice de Masa Corporal</div>
+        </div>
+        <div
+          className="metric-badge"
+          style={{
+            background: `${metrics.bmiColor}22`,
+            borderColor: `${metrics.bmiColor}55`,
+            color: metrics.bmiColor,
+          }}
+        >
+          {metrics.bmiCategory}
+        </div>
+      </div>
+      <div className="imc-bar-wrap">
+        <div className="imc-bar">
           <div
-            className="metric-badge"
-            style={{
-              background: `${metrics.bmiColor}22`,
-              borderColor: `${metrics.bmiColor}55`,
-              color: metrics.bmiColor,
-            }}
-          >
-            {metrics.bmiCategory}
-          </div>
+            className="imc-marker"
+            style={{ left: `${markerPct}%`, background: metrics.bmiColor }}
+          />
         </div>
-        <div className="imc-bar-wrap">
-          <div className="imc-bar">
-            <div
-              className="imc-marker"
-              style={{ left: `${markerPct}%`, background: metrics.bmiColor }}
-            />
-          </div>
-          <div className="imc-labels">
-            <span>Bajo peso</span>
-            <span>Normal</span>
-            <span>Sobrepeso</span>
-            <span>Obesidad</span>
-          </div>
+        <div className="imc-labels">
+          <span>Bajo peso</span>
+          <span>Normal</span>
+          <span>Sobrepeso</span>
+          <span>Obesidad</span>
         </div>
-      </article>
-
-      <article className="metric-card">
-        <div className="metric-val metric-val-small">{metrics.bmr.toLocaleString()}</div>
-        <div className="metric-lbl">TMB kcal/día</div>
-        <div className="metric-sub">Calorías en reposo</div>
-      </article>
-
-      <article className="metric-card">
-        <div className="metric-val metric-val-small">{metrics.tdee.toLocaleString()}</div>
-        <div className="metric-lbl">TDEE kcal/día</div>
-        <div className="metric-sub">Actividad moderada</div>
-      </article>
-
-      <article className="metric-card metric-card-full">
-        <div className="metric-val metric-val-green">
-          {metrics.idealMin} - {metrics.idealMax} kg
-        </div>
-        <div className="metric-lbl">Peso saludable para tu altura</div>
-        <div className="metric-sub">Rango IMC 18.5 - 24.9</div>
-      </article>
-    </section>
+      </div>
+    </article>
   );
 }

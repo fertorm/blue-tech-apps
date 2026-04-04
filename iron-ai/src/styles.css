@@ -122,6 +122,11 @@ input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;hei
 .prof-saved{padding:10px 14px;background:#0a1f00;border:1px solid #4a8a00;border-radius:8px;text-align:center;font-size:.72rem;color:#7fff00;letter-spacing:.08em;text-transform:uppercase}
 .metrics-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .metric-card-full{grid-column:1/-1}
+.metric-card-lock{border-style:dashed;border-color:#333;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.3rem;transition:border-color .15s;background:none;text-align:center;width:100%}
+.metric-card-lock:hover{border-color:var(--orange)}
+.metric-card-lock .lock-icon{font-size:1.3rem;opacity:.6}
+.metric-card-lock .metric-lbl{opacity:.5}
+.metric-card-lock .metric-sub{color:var(--orange);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
 .metric-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .metric-badge{padding:3px 10px;border:1px solid;border-radius:6px;font-size:.68rem;font-weight:600}
 .metric-val{font-family:"Bebas Neue",Impact,sans-serif;font-size:1.6rem;line-height:1}
