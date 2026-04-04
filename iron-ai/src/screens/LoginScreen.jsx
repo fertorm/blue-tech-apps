@@ -1,11 +1,16 @@
 export default function LoginScreen({
+  authCode,
   authEmail,
+  authError,
   authLoading,
   authSent,
   loginReturnTo,
   sendMagicLink,
+  setAuthCode,
   setAuthEmail,
+  setAuthSent,
   setScreen,
+  verifyOtp,
 }) {
   return (
     <section className="auth-wrap">
@@ -16,17 +21,46 @@ export default function LoginScreen({
 
       <h2 className="auth-title">TU PROGRESO, TU HISTORIAL</h2>
       <p className="auth-sub">
-        Ingresá tu email para recibir un enlace de acceso. Sin contraseña, sin
+        Ingresá tu email para recibir un código de acceso. Sin contraseña, sin
         registro.
       </p>
 
       <div className="auth-form">
         {authSent ? (
-          <div className="auth-sent">
-            ✓ Enlace enviado a <b>{authEmail}</b>
-            <br />
-            Revisá tu bandeja de entrada y hacé click en el enlace para ingresar.
-          </div>
+          <>
+            <div className="auth-sent">
+              ✓ Código enviado a <b>{authEmail}</b>
+              <br />
+              Revisá tu bandeja de entrada e ingresá el código de 6 dígitos.
+            </div>
+            <input
+              className="auth-input"
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              maxLength={6}
+              aria-label="Código de verificación"
+              placeholder="123456"
+              value={authCode}
+              onChange={(event) => setAuthCode(event.target.value.replace(/\D/g, ""))}
+              onKeyDown={(event) => event.key === "Enter" && verifyOtp()}
+              autoFocus
+            />
+            {authError && <p className="auth-error">{authError}</p>}
+            <button
+              className="gbtn"
+              disabled={authLoading || authCode.length < 6}
+              onClick={verifyOtp}
+            >
+              {authLoading ? "VERIFICANDO..." : "VERIFICAR CÓDIGO"}
+            </button>
+            <button
+              className="auth-skip"
+              onClick={() => setAuthSent(false)}
+            >
+              Reenviar código
+            </button>
+          </>
         ) : (
           <>
             <input
@@ -38,12 +72,13 @@ export default function LoginScreen({
               onChange={(event) => setAuthEmail(event.target.value)}
               onKeyDown={(event) => event.key === "Enter" && sendMagicLink()}
             />
+            {authError && <p className="auth-error">{authError}</p>}
             <button
               className="gbtn"
               disabled={authLoading || !authEmail.trim()}
               onClick={sendMagicLink}
             >
-              {authLoading ? "ENVIANDO..." : "ENVIAR ENLACE"}
+              {authLoading ? "ENVIANDO..." : "ENVIAR CÓDIGO"}
             </button>
           </>
         )}

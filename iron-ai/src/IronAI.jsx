@@ -67,6 +67,8 @@ export default function IronAI() {
   const [authEmail, setAuthEmail] = useState("");
   const [authSent, setAuthSent] = useState(false);
   const [authLoading, setAuthLoading] = useState(false);
+  const [authCode, setAuthCode] = useState("");
+  const [authError, setAuthError] = useState("");
   const [showAuthPrompt, setShowAuthPrompt] = useState(false);
   const [loginReturnTo, setLoginReturnTo] = useState("form");
 
@@ -386,12 +388,31 @@ export default function IronAI() {
   async function sendMagicLink() {
     if (!authEmail.trim()) return;
     setAuthLoading(true);
+    setAuthError("");
     const { error } = await supabase.auth.signInWithOtp({
       email: authEmail.trim(),
-      options: { emailRedirectTo: window.location.href },
+      options: { emailRedirectTo: window.location.origin },
     });
     setAuthLoading(false);
-    if (!error) setAuthSent(true);
+    if (!error) {
+      setAuthSent(true);
+      setAuthCode("");
+    } else {
+      setAuthError("No se pudo enviar el email. Intentá de nuevo.");
+    }
+  }
+
+  async function verifyOtp() {
+    if (!authCode.trim()) return;
+    setAuthLoading(true);
+    setAuthError("");
+    const { error } = await supabase.auth.verifyOtp({
+      email: authEmail.trim(),
+      token: authCode.trim(),
+      type: "email",
+    });
+    setAuthLoading(false);
+    if (error) setAuthError("Código incorrecto o expirado. Pedí un nuevo código.");
   }
 
   async function signOut() {
@@ -680,13 +701,18 @@ export default function IronAI() {
           {screen === "login" && (
             <main role="main">
               <LoginScreen
+                authCode={authCode}
                 authEmail={authEmail}
+                authError={authError}
                 authLoading={authLoading}
                 authSent={authSent}
                 loginReturnTo={loginReturnTo}
                 sendMagicLink={sendMagicLink}
+                setAuthCode={setAuthCode}
                 setAuthEmail={setAuthEmail}
+                setAuthSent={setAuthSent}
                 setScreen={setScreen}
+                verifyOtp={verifyOtp}
               />
             </main>
           )}
