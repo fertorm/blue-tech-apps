@@ -17,6 +17,7 @@
             --primary-dark: #2563eb;
             --secondary-color: #0f172a;
             --accent-color: #06b6d4;
+            --accent-copper: #c9753d;
             --text-light: #f8fafc;
             --text-dim: #94a3b8;
             --bg-dark: #020617;
@@ -26,7 +27,7 @@
             --border: rgba(148, 163, 184, 0.16);
             --shadow: 0 24px 60px rgba(2, 6, 23, 0.45);
             --container-width: 1180px;
-            --header-height: 82px;
+            --header-height: 74px;
             --transition: 0.28s ease;
         }
 
@@ -80,6 +81,10 @@
             letter-spacing: 0.01em;
         }
 
+        .eyebrow i {
+            color: var(--accent-copper);
+        }
+
         .section-heading {
             max-width: 720px;
             margin-bottom: 1.5rem;
@@ -112,7 +117,7 @@
             gap: 0.6rem;
             border-radius: 999px;
             border: 1px solid transparent;
-            padding: 0.95rem 1.4rem;
+            padding: 0.9rem 1.35rem;
             font-weight: 700;
             transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
         }
@@ -127,10 +132,19 @@
             box-shadow: 0 16px 30px rgba(37, 99, 235, 0.28);
         }
 
+        .btn-primary i {
+            color: #dff8ff;
+        }
+
         .btn-secondary {
             border-color: rgba(148, 163, 184, 0.25);
-            background: rgba(15, 23, 42, 0.6);
+            background: rgba(15, 23, 42, 0.55);
             color: var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            border-color: rgba(96, 165, 250, 0.35);
+            background: rgba(15, 23, 42, 0.78);
         }
 
         header {
@@ -147,60 +161,88 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .logo {
             display: inline-flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.8rem;
             font-weight: 800;
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             letter-spacing: -0.03em;
+            flex-shrink: 0;
         }
 
         .logo-mark {
-            width: 42px;
-            height: 42px;
-            border-radius: 14px;
-            display: grid;
-            place-items: center;
-            color: white;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            box-shadow: 0 12px 22px rgba(59, 130, 246, 0.28);
+            width: 44px;
+            height: 44px;
+            display: block;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 18px rgba(10, 61, 98, 0.22));
         }
 
-        .logo span {
+        .logo-text {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.18rem;
+            color: var(--text-light);
+            letter-spacing: -0.045em;
+        }
+
+        .logo-text span {
             color: var(--primary-color);
+        }
+
+        .logo-text .logo-accent {
+            color: var(--accent-copper);
+        }
+
+        nav {
+            margin-left: auto;
+            margin-right: auto;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             align-items: center;
-            gap: 1.4rem;
+            gap: 2rem;
             color: var(--text-dim);
             font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        nav a {
+            transition: color var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--text-light);
         }
 
         .hero {
-            padding: 72px 0 90px;
+            padding: 54px 0 82px;
         }
 
         .hero-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-            gap: 3rem;
+            grid-template-columns: minmax(0, 1fr) minmax(350px, 0.86fr);
+            gap: 2.25rem;
             align-items: center;
         }
 
+        .hero-copy {
+            max-width: 660px;
+        }
+
         .hero-copy h1 {
-            font-size: clamp(2.8rem, 6vw, 5.4rem);
-            line-height: 0.98;
-            letter-spacing: -0.06em;
+            font-size: clamp(2.9rem, 5vw, 4.8rem);
+            line-height: 1;
+            letter-spacing: -0.065em;
             font-weight: 800;
-            max-width: 760px;
-            margin: 1.2rem 0 1.5rem;
+            max-width: 690px;
+            margin: 1rem 0 1.3rem;
         }
 
         .hero-copy h1 span {
@@ -210,10 +252,10 @@
         }
 
         .hero-copy p {
-            font-size: 1.12rem;
+            font-size: 1.02rem;
             color: var(--text-dim);
-            max-width: 620px;
-            margin-bottom: 2rem;
+            max-width: 560px;
+            margin-bottom: 1.7rem;
         }
 
         .hero-actions,
@@ -224,14 +266,14 @@
         }
 
         .hero-metrics {
-            margin-top: 1.8rem;
+            margin-top: 1.45rem;
         }
 
         .metric {
             min-width: 150px;
-            padding: 1rem 1.1rem;
-            border-radius: 18px;
-            background: rgba(15, 23, 42, 0.55);
+            padding: 0.95rem 1rem;
+            border-radius: 16px;
+            background: rgba(15, 23, 42, 0.46);
             border: 1px solid rgba(148, 163, 184, 0.14);
             box-shadow: var(--shadow);
         }
@@ -249,28 +291,28 @@
         }
 
         .hero-panel {
-            padding: 1.5rem;
-            border-radius: 30px;
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.92), rgba(2, 6, 23, 0.78));
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 1.25rem;
+            border-radius: 32px;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(2, 6, 23, 0.78));
+            border: 1px solid rgba(96, 165, 250, 0.16);
             box-shadow: var(--shadow);
         }
 
         .panel-chip-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.7rem;
-            margin-bottom: 1rem;
+            gap: 0.6rem;
+            margin-bottom: 1.1rem;
         }
 
         .panel-chip {
-            padding: 0.45rem 0.8rem;
+            padding: 0.38rem 0.72rem;
             border-radius: 999px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            border: 1px solid rgba(148, 163, 184, 0.15);
-            background: rgba(30, 41, 59, 0.72);
-            color: #dbeafe;
+            font-size: 0.76rem;
+            font-weight: 600;
+            border: 1px solid rgba(148, 163, 184, 0.12);
+            background: rgba(30, 41, 59, 0.46);
+            color: #cbd5e1;
         }
 
         .panel-stack,
@@ -294,8 +336,9 @@
         }
 
         .panel-card {
-            padding: 1rem;
-            background: rgba(15, 23, 42, 0.82);
+            padding: 1.15rem 1.2rem;
+            background: rgba(15, 23, 42, 0.78);
+            border-color: rgba(148, 163, 184, 0.1);
         }
 
         .panel-card strong {
@@ -303,20 +346,26 @@
             align-items: center;
             justify-content: space-between;
             gap: 1rem;
-            margin-bottom: 0.45rem;
-            font-size: 1rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.02rem;
         }
 
         .status-pill {
             display: inline-flex;
             align-items: center;
             gap: 0.45rem;
-            padding: 0.35rem 0.7rem;
+            padding: 0.34rem 0.68rem;
             border-radius: 999px;
-            font-size: 0.75rem;
+            font-size: 0.73rem;
             font-weight: 700;
-            background: rgba(16, 185, 129, 0.14);
-            color: #6ee7b7;
+            background: rgba(16, 185, 129, 0.12);
+            color: #86efac;
+            border: 1px solid rgba(16, 185, 129, 0.08);
+        }
+
+        .panel-card p {
+            font-size: 0.97rem;
+            line-height: 1.55;
         }
 
         .panel-card p,
@@ -370,6 +419,12 @@
             background: rgba(59, 130, 246, 0.1);
             border: 1px solid rgba(59, 130, 246, 0.14);
             margin-bottom: 1rem;
+        }
+
+        .card-label.accent-label {
+            color: #f3c8aa;
+            background: rgba(201, 117, 61, 0.12);
+            border-color: rgba(201, 117, 61, 0.18);
         }
 
         .card h3 {
@@ -456,6 +511,10 @@
             nav {
                 display: none;
             }
+
+            .hero-copy {
+                max-width: none;
+            }
         }
 
         @media (max-width: 720px) {
@@ -464,11 +523,16 @@
             }
 
             .hero {
-                padding: 44px 0 72px;
+                padding: 40px 0 72px;
             }
 
             .header-bar {
                 min-height: 72px;
+            }
+
+            .hero-copy h1 {
+                font-size: clamp(2.6rem, 12vw, 3.8rem);
+                line-height: 0.98;
             }
 
             .hero-actions {
@@ -491,8 +555,8 @@
     <header>
         <div class="container header-bar">
             <a href="#inicio" class="logo">
-                <span class="logo-mark"><i class="fas fa-cube"></i></span>
-                Blue<span>Tech</span>
+                <img class="logo-mark" src="./logo-bt.png" alt="Blue Tech logo">
+                <div class="logo-text">Blue <span class="logo-accent">Tech</span></div>
             </a>
 
             <nav>
@@ -514,8 +578,8 @@
             <div class="container hero-grid">
                 <div class="hero-copy">
                     <div class="eyebrow"><i class="fas fa-bolt"></i> Blue Tech | Apps + Automatización + IA</div>
-                    <h1>Construimos <span>apps reales</span>, herramientas técnicas y automatizaciones con impacto.</h1>
-                    <p>Blue Tech desarrolla productos digitales propios y soluciones a medida: apps de entretenimiento, herramientas técnicas, flujos automatizados y proyectos con inteligencia artificial pensados para crecer con tus ideas.</p>
+                    <h1>Creamos <span>apps reales</span>, sistemas útiles y automatización con identidad.</h1>
+                    <p>Blue Tech diseña productos digitales y soluciones a medida para entretenimiento, operaciones y nuevos proyectos con inteligencia artificial.</p>
 
                     <div class="hero-actions">
                         <a href="#apps" class="btn btn-primary"><i class="fas fa-layer-group"></i> Ver apps destacadas</a>
@@ -657,7 +721,7 @@
 
                 <div class="project-highlight">
                     <article class="project-main">
-                        <div class="card-label">En desarrollo activo</div>
+                        <div class="card-label accent-label">En desarrollo activo</div>
                         <h3>Chat bot de WhatsApp</h3>
                         <p>Proyecto técnico en ejecución orientado a conversación automatizada, atención al cliente y respuesta ágil desde uno de los canales más importantes para negocios y servicios en Latinoamérica.</p>
                         <p>La visión es construir una solución que combine automatización, claridad en la conversación y utilidad práctica para procesos reales.</p>
